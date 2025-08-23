@@ -1,0 +1,16 @@
+{
+  "name": "slk-unified",
+  "version": "2.3.0",
+  "description": "SLK Modular Therapy Curriculum - Unified Version",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "serve -s -l tcp://0.0.0.0:$PORT .",
+    "dev": "serve -s ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
