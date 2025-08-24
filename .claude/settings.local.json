@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Read(//mnt/c/Users/insti/Downloads/**)"
+      "Read(//mnt/c/Users/insti/Downloads/**)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []

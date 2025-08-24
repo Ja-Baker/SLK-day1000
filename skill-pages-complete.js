@@ -831,15 +831,25 @@ const skillPagesContent = {
 
 // Function to display skill page content
 function showSkillPage(skillId) {
+    // Show loading indicator
+    if (typeof window.showLoading === 'function') {
+        window.showLoading('Loading skill page...');
+    }
+    
     const skill = skillPagesContent[skillId];
     if (!skill) {
         console.error(`Skill ${skillId} not found`);
+        if (typeof window.hideLoading === 'function') {
+            window.hideLoading();
+        }
         return;
     }
 
-    // Hide all pages
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.classList.remove('active'));
+    // Use requestAnimationFrame for smooth transitions
+    requestAnimationFrame(() => {
+        // Hide all pages
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
 
     // Create or update skill page
     let skillPage = document.getElementById('currentSkillPage');
@@ -876,23 +886,31 @@ function showSkillPage(skillId) {
         </div>
     `;
 
-    skillPage.innerHTML = content;
-    skillPage.classList.add('active');
+        skillPage.innerHTML = content;
+        skillPage.classList.add('active');
 
-    // Update navigation history
-    if (typeof navigationHistory !== 'undefined') {
-        navigationHistory.push(currentPage);
-        currentPage = 'currentSkillPage';
-    }
+        // Update navigation history
+        if (typeof navigationHistory !== 'undefined') {
+            navigationHistory.push(currentPage);
+            currentPage = 'currentSkillPage';
+        }
 
-    // Show back button
-    const backBtn = document.getElementById('backBtn');
-    if (backBtn) {
-        backBtn.style.display = 'block';
-    }
+        // Show back button
+        const backBtn = document.getElementById('backBtn');
+        if (backBtn) {
+            backBtn.style.display = 'block';
+        }
 
-    // Scroll to top
-    window.scrollTo(0, 0);
+        // Scroll to top
+        window.scrollTo(0, 0);
+        
+        // Hide loading indicator after content is ready
+        setTimeout(() => {
+            if (typeof window.hideLoading === 'function') {
+                window.hideLoading();
+            }
+        }, 150);
+    });
 }
 
 // Function to show skill with activity modal

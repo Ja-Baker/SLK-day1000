@@ -16,37 +16,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to show a specific page
 function showPage(pageId) {
-    // Hide all pages
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => {
-        page.classList.remove('active');
-    });
-    
-    // Show the requested page
-    const targetPage = document.getElementById(pageId);
-    if (targetPage) {
-        targetPage.classList.add('active');
-        
-        // Update navigation history
-        if (currentPage !== pageId) {
-            navigationHistory.push(currentPage);
-            currentPage = pageId;
-        }
-        
-        // Show/hide back button
-        const backBtn = document.getElementById('backBtn');
-        if (pageId === 'homePage') {
-            backBtn.style.display = 'none';
-        } else {
-            backBtn.style.display = 'block';
-        }
-        
-        // Scroll to top
-        window.scrollTo(0, 0);
-        
-        // Initialize any expandable sections on the new page
-        initializeExpandableSections();
+    // Show loading for large pages
+    if (pageId !== 'homePage' && typeof window.showLoading === 'function') {
+        window.showLoading('Loading page...');
     }
+    
+    // Use requestAnimationFrame for smoother transitions
+    requestAnimationFrame(() => {
+        // Hide all pages
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        
+        // Show the requested page
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+            targetPage.classList.add('active');
+            
+            // Update navigation history
+            if (currentPage !== pageId) {
+                navigationHistory.push(currentPage);
+                currentPage = pageId;
+            }
+            
+            // Show/hide back button
+            const backBtn = document.getElementById('backBtn');
+            if (pageId === 'homePage') {
+                backBtn.style.display = 'none';
+            } else {
+                backBtn.style.display = 'block';
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+            
+            // Initialize any expandable sections on the new page
+            initializeExpandableSections();
+        }
+        
+        // Hide loading indicator after page transition
+        setTimeout(() => {
+            if (typeof window.hideLoading === 'function') {
+                window.hideLoading();
+            }
+        }, 200);
+    });
 }
 
 // Function to go back to previous page

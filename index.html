@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SLK Curriculum Planning Tool</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="external-links-mapping.js" as="script">
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//hub.speechandlanguagekids.com">
+    <link rel="dns-prefetch" href="//www.dropbox.com">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -1359,11 +1369,44 @@
         </main>
     </div>
 
+    <!-- Critical scripts loaded immediately -->
     <script src="script.js"></script>
     <script src="external-links-mapping.js"></script>
-    <script src="complete-curriculum-content.js"></script>
-    <script src="curriculum-content-2.js"></script>
-    <script src="skill-pages-complete.js"></script>
-    <script src="pdf-downloads.js"></script>
+    
+    <!-- Non-critical scripts loaded asynchronously -->
+    <script async src="complete-curriculum-content.js"></script>
+    <script async src="curriculum-content-2.js"></script>
+    <script defer src="skill-pages-complete.js"></script>
+    <script defer src="pdf-downloads.js"></script>
+    
+    <!-- Performance optimization script -->
+    <script>
+        // Preload critical resources
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show loading indicator for slow operations
+            window.showLoading = function(message = 'Loading...') {
+                let loader = document.getElementById('loadingIndicator');
+                if (!loader) {
+                    loader = document.createElement('div');
+                    loader.id = 'loadingIndicator';
+                    loader.className = 'loading-indicator';
+                    loader.innerHTML = `
+                        <div class="loading-spinner"></div>
+                        <div class="loading-text">${message}</div>
+                    `;
+                    document.body.appendChild(loader);
+                }
+                loader.style.display = 'flex';
+                loader.querySelector('.loading-text').textContent = message;
+            };
+            
+            window.hideLoading = function() {
+                const loader = document.getElementById('loadingIndicator');
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+            };
+        });
+    </script>
 </body>
 </html>
