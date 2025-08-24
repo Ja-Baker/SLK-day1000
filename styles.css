@@ -804,7 +804,64 @@ p {
     }
 }
 
-/* BT-8008: Functional Content Styles */
+/* External Link and Skill Page Styles */
+.external-link-section {
+    background-color: #f8f9fa;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.external-link-btn {
+    background: linear-gradient(135deg, var(--blue) 0%, #007a8f 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.external-link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 147, 172, 0.3);
+    background: linear-gradient(135deg, #007a8f 0%, var(--blue) 100%);
+}
+
+.skill-category {
+    color: var(--purple);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.skill-navigation {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--gray);
+}
+
+.back-to-curriculum-btn {
+    background-color: var(--gray);
+    color: var(--black);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-to-curriculum-btn:hover {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
 .activity-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
