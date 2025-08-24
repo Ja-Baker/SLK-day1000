@@ -193,6 +193,192 @@ function downloadSkillResource(skillId, resourceType) {
     generateFunctionalPDF('skill', `${skillId}-${resourceType}`);
 }
 
+// Function to populate resource content on pages
+function populateResourceContent() {
+    // Populate Screening Checklists
+    const checklistsContent = document.getElementById('checklistsContent');
+    if (checklistsContent && checklistsContent.querySelector('.loading-content')) {
+        checklistsContent.innerHTML = `
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>📋 General Screening</h3>
+                    <p>Comprehensive speech and language screening tool for initial assessments.</p>
+                    <button class="download-btn" onclick="downloadChecklist('screening-general')">
+                        Download General Screening Checklist
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🗣️ Speech Sounds</h3>
+                    <p>Monitor progress in articulation and phonological development.</p>
+                    <button class="download-btn" onclick="downloadChecklist('speech-sounds')">
+                        Download Speech Sounds Checklist
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>📚 Language Skills</h3>
+                    <p>Track receptive and expressive language development milestones.</p>
+                    <button class="download-btn" onclick="downloadChecklist('language-skills')">
+                        Download Language Skills Checklist
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎭 Social Communication</h3>
+                    <p>Assess pragmatic language and social interaction skills.</p>
+                    <button class="download-btn" onclick="downloadChecklist('social-communication')">
+                        Download Social Communication Checklist
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🔊 Voice & Fluency</h3>
+                    <p>Screen for voice quality issues and fluency disorders.</p>
+                    <button class="download-btn" onclick="downloadChecklist('fluency-voice')">
+                        Download Voice & Fluency Checklist
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>💬 Functional Communication</h3>
+                    <p>Evaluate basic communication needs and functional skills.</p>
+                    <button class="download-btn" onclick="downloadChecklist('functional-communication')">
+                        Download Functional Communication Checklist
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Populate Handouts
+    const handoutsContent = document.getElementById('handoutsContent');
+    if (handoutsContent && handoutsContent.querySelector('.loading-content')) {
+        handoutsContent.innerHTML = `
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>🏠 Home Practice Strategies</h3>
+                    <p>Evidence-based strategies for parents to support speech and language at home.</p>
+                    <button class="download-btn" onclick="downloadHandout('home-strategies')">
+                        Download Home Strategies
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎓 Classroom Support</h3>
+                    <p>Techniques for teachers to support students with communication challenges.</p>
+                    <button class="download-btn" onclick="downloadHandout('classroom-support')">
+                        Download Classroom Guide
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🧩 AAC Introduction</h3>
+                    <p>Introduction to augmentative and alternative communication for families.</p>
+                    <button class="download-btn" onclick="downloadHandout('aac-intro')">
+                        Download AAC Guide
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>📖 Language Development</h3>
+                    <p>Milestones and tips for supporting language development by age.</p>
+                    <button class="download-btn" onclick="downloadHandout('language-development')">
+                        Download Development Guide
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎯 Speech Sound Development</h3>
+                    <p>When to expect different speech sounds and how to practice them.</p>
+                    <button class="download-btn" onclick="downloadHandout('speech-development')">
+                        Download Speech Sound Guide
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>💭 Social Communication Tips</h3>
+                    <p>Supporting social skills and pragmatic language development.</p>
+                    <button class="download-btn" onclick="downloadHandout('social-tips')">
+                        Download Social Skills Guide
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Populate Visuals
+    const visualsContent = document.getElementById('visualsContent');
+    if (visualsContent && visualsContent.querySelector('.loading-content')) {
+        visualsContent.innerHTML = `
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>📅 Visual Schedules</h3>
+                    <p>Customizable visual schedules for daily routines and transitions.</p>
+                    <button class="download-btn" onclick="downloadVisual('visual-schedules')">
+                        Download Visual Schedules
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎨 Choice Boards</h3>
+                    <p>Visual choice boards for requesting and decision-making.</p>
+                    <button class="download-btn" onclick="downloadVisual('choice-boards')">
+                        Download Choice Boards
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>😊 Emotion Cards</h3>
+                    <p>Visual supports for identifying and expressing emotions.</p>
+                    <button class="download-btn" onclick="downloadVisual('emotion-cards')">
+                        Download Emotion Cards
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🔤 First/Then Boards</h3>
+                    <p>Visual supports for sequencing and transitions.</p>
+                    <button class="download-btn" onclick="downloadVisual('first-then')">
+                        Download First/Then Boards
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🚦 Behavior Supports</h3>
+                    <p>Visual cues for behavior expectations and self-regulation.</p>
+                    <button class="download-btn" onclick="downloadVisual('behavior-supports')">
+                        Download Behavior Visuals
+                    </button>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>💬 Communication Boards</h3>
+                    <p>Basic communication boards for functional communication.</p>
+                    <button class="download-btn" onclick="downloadVisual('communication-boards')">
+                        Download Communication Boards
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+}
+
+// Initialize content when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', populateResourceContent);
+} else {
+    // DOM is already loaded, populate immediately
+    populateResourceContent();
+}
+
+// Also populate when page becomes visible (for async loading)
+document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+        populateResourceContent();
+    }
+});
+
 // Make functions globally available
 window.generateFunctionalPDF = generateFunctionalPDF;
 window.downloadChecklist = downloadChecklist;
@@ -200,5 +386,6 @@ window.downloadHandout = downloadHandout;
 window.downloadVisual = downloadVisual;
 window.downloadResource = downloadResource;
 window.downloadSkillResource = downloadSkillResource;
+window.populateResourceContent = populateResourceContent;
 
 console.log('✅ PDF download functions loaded and available globally');

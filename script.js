@@ -53,6 +53,15 @@ function showPage(pageId) {
             
             // Initialize any expandable sections on the new page
             initializeExpandableSections();
+            
+            // Populate resource content if on a resource page
+            if (pageId === 'checklists' || pageId === 'handouts' || pageId === 'visuals') {
+                if (typeof window.populateResourceContent === 'function') {
+                    setTimeout(() => {
+                        window.populateResourceContent();
+                    }, 50);
+                }
+            }
         }
         
         // Hide loading indicator after page transition
