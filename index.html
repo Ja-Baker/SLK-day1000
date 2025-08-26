@@ -952,91 +952,321 @@
             </div>
 
             <div id="analyticLanguage" class="page">
-                <h2>Analytic Language Processor Curriculum</h2>
-                <p>This curriculum focuses on building communication skills for individuals who learn language analytically, word by word.</p>
+                <h2>Analytic Language Processor Curriculum (First Words)</h2>
+                <p>Analytic Language Processors (ALPs) are children who learn language one word at a time—starting with single words, gradually combining them into phrases and sentences as they develop.</p>
+                <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
-                <div class="curriculum-section">
-                    <h3>Level 1 Skills</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('firstWords')">First Words</button>
-                        <button class="skill-btn" onclick="showSkillPage('functionalWords')">Functional Words</button>
-                        <button class="skill-btn" onclick="showSkillPage('requestingItems')">Requesting Items</button>
-                        <button class="skill-btn" onclick="showSkillPage('requestingActions')">Requesting Actions</button>
-                        <button class="skill-btn" onclick="showSkillPage('requestingHelp')">Requesting Help</button>
-                        <button class="skill-btn" onclick="showSkillPage('protesting')">Protesting</button>
-                        <button class="skill-btn" onclick="showSkillPage('commenting')">Commenting</button>
-                        <button class="skill-btn" onclick="showSkillPage('greetingSocial')">Greeting and Social Routines</button>
+                <div class="level-selection">
+                    <!-- Beginner Level Card -->
+                    <div class="level-card" onclick="toggleLevel('analyticLanguage', 'beginner')">
+                        <h4>Beginner Level: Encouraging First Words</h4>
+                        <p class="age-range">(Any Age)</p>
+                        <ul>
+                            <li>Modeling language in a way that supports language development</li>
+                            <li>Vocabulary-building activities</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Intermediate Level Card -->
+                    <div class="level-card" onclick="toggleLevel('analyticLanguage', 'intermediate')">
+                        <h4>Intermediate Level: Producing Early Word Shapes</h4>
+                        <p class="age-range">(Ages: 1-3 yrs and beyond)</p>
+                        <ul>
+                            <li>Imitating Actions and Sound Effects</li>
+                            <li>Imitating and Producing CV, VC, and CVC Words (like "no", "up", and "dog")</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Advanced Level Card -->
+                    <div class="level-card" onclick="toggleLevel('analyticLanguage', 'advanced')">
+                        <h4>Advanced Level: Expanding Vocabulary and Combining Words</h4>
+                        <p class="age-range">(Ages: 1.5-3 yrs and beyond)</p>
+                        <ul>
+                            <li>Building an Expressive Vocabulary of First 50 Words</li>
+                            <li>Producing 2-Word Utterances</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
                     </div>
                 </div>
                 
-                <div class="curriculum-section">
-                    <h3>Level 2 Skills</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('twoWordCombinations')">Two Word Combinations</button>
-                        <button class="skill-btn" onclick="showSkillPage('expandingUtterances')">Expanding Utterances</button>
-                        <button class="skill-btn" onclick="showSkillPage('askingQuestions')">Asking Questions</button>
-                        <button class="skill-btn" onclick="showSkillPage('earlyGrammar')">Early Grammar</button>
-                        <button class="skill-btn" onclick="showSkillPage('functionWords')">Function Words</button>
-                        <button class="skill-btn" onclick="showSkillPage('narrativeSkills')">Early Narrative Skills</button>
+                <!-- Expandable Content Sections -->
+                <div id="analyticLanguage-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Encouraging First Words</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('analyticLanguage', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>In this level, the focus is on creating an environment that encourages spontaneous word use by using short, simple, and engaging language models during play interactions.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, _______ will spontaneously speak words to interact with others at least five times during a 10-minute play interaction on three consecutive data collection days.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, use the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-indirect-language-stimulation" target="_blank" class="activity-btn">Encouraging First Words through Indirect Language Stimulation</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="analyticLanguage-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Producing Early Word Shapes</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('analyticLanguage', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on helping the child produce clear, functional words by strengthening their ability to imitate sounds and words.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the report period, during a 10-minute activity, _________ will spontaneously produce at least 10 consonant-vowel (CV), vowel-consonant (VC), and consonant-vowel-consonant (CVC) words with verbal prompting as needed.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, use the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-cv-vc-cvc-words" target="_blank" class="activity-btn">Producing CV, VC, and CVC Words for Functional Communication</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="analyticLanguage-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Expanding Vocabulary and Combining Words</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('analyticLanguage', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, the focus is on growing the child's vocabulary and moving from single words to two-word phrases for more functional communication.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, during a 10-minute interaction with an adult, _____ will produce five 2-word combinations, either in imitation or spontaneously produced, with models and prompts from the adult as needed.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, choose one or more of the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-first-50-words" target="_blank" class="activity-btn">Building an Expressive Vocabulary of First 50 Words</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-2-word-utterances" target="_blank" class="activity-btn">Producing 2-Word Utterances</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div id="gestaltLanguage" class="page">
-                <h2>Gestalt Language Processor Curriculum</h2>
-                <p>This curriculum supports individuals who learn language in chunks or scripts and need to develop flexible, self-generated language.</p>
+                <h2>Gestalt Language Processor Curriculum (Shaping Echolalia)</h2>
+                <p>Gestalt Language Processors (GLPs) develop language in chunks or "gestalts" rather than individual words. Instead of learning single words and combining them into phrases, they acquire and use whole sentences, scripts, or song lyrics that they have heard elsewhere.</p>
+                <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
-                <div class="curriculum-section">
-                    <h3>Stage 1: Echolalia and Scripts</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('echolaliaSupport')">Supporting Echolalia</button>
-                        <button class="skill-btn" onclick="showSkillPage('scriptVariation')">Script Variation</button>
-                        <button class="skill-btn" onclick="showSkillPage('functionalScripts')">Functional Scripts</button>
-                        <button class="skill-btn" onclick="showSkillPage('scriptModeling')">Script Modeling</button>
+                <div class="level-selection">
+                    <!-- Beginner Level Card -->
+                    <div class="level-card" onclick="toggleLevel('gestaltLanguage', 'beginner')">
+                        <h4>Beginner Level: Using Early Gestalts</h4>
+                        <p class="age-range">(Ages: 1.5 - 3.5 yrs and beyond)</p>
+                        <ul>
+                            <li>Finding meaning in echolalia</li>
+                            <li>Modeling gestalts</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Intermediate Level Card -->
+                    <div class="level-card" onclick="toggleLevel('gestaltLanguage', 'intermediate')">
+                        <h4>Intermediate Level: Mitigated Gestalts</h4>
+                        <p class="age-range">(Ages: 2.5 - 5 yrs and beyond)</p>
+                        <ul>
+                            <li>Breaking Down Gestalts</li>
+                            <li>Recombining Pieces of Different Gestalts</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Advanced Level Card -->
+                    <div class="level-card" onclick="toggleLevel('gestaltLanguage', 'advanced')">
+                        <h4>Advanced Level: Developing Self-Generated Language</h4>
+                        <p class="age-range">(Ages: 3 - 7 yrs and beyond)</p>
+                        <ul>
+                            <li>Using Single Words</li>
+                            <li>Producing 2-Word Utterances</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
                     </div>
                 </div>
                 
-                <div class="curriculum-section">
-                    <h3>Stage 2: Script Mixing</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('scriptMixing')">Script Mixing</button>
-                        <button class="skill-btn" onclick="showSkillPage('partialGestalt')">Partial Gestalt Units</button>
-                        <button class="skill-btn" onclick="showSkillPage('flexibleScripts')">Flexible Script Use</button>
+                <!-- Expandable Content Sections -->
+                <div id="gestaltLanguage-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Using Early Gestalts</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('gestaltLanguage', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on helping caregivers and therapists understand and support a GLP's unique language development. Many GLPs already have scripts and gestalts they use in communication, but they may not yet be mixing or modifying them.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, _________ will spontaneously communicate using at least 5 different gestalts (words, phrases, sentences, songs, or scripts) during a 10-minute play activity in the therapy room.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, use the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-early-gestalts" target="_blank" class="activity-btn">Responding to and Modeling Early Gestalts</a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="curriculum-section">
-                    <h3>Stage 3: Single Words</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('isolatedWords')">Isolated Words from Scripts</button>
-                        <button class="skill-btn" onclick="showSkillPage('newSingleWords')">New Single Words</button>
-                        <button class="skill-btn" onclick="showSkillPage('wordCombining')">Word Combining</button>
+                <div id="gestaltLanguage-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Mitigated Gestalts</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('gestaltLanguage', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At this stage, the child begins to analyze and break apart their longer gestalts into smaller, more flexible units. They may start mixing and matching words from different scripts to create novel combinations.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, ___________ will spontaneously communicate using at least 5 different shortened gestalts or a gestalt made up of pieces of other gestalts during a 10-minute play activity in the therapy room.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, use the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-mitigated-gestalts" target="_blank" class="activity-btn">Breaking Down and Mixing and Matching Gestalts</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="gestaltLanguage-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Developing Self-Generated Language</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('gestaltLanguage', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, gestalt language processors begin to pull single words out of their gestalts and use them independently. They may label or request using single words.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, _______ will spontaneously communicate using at least 5 different single words or 2-word combinations during a 10-minute play activity in the therapy room.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, choose one or more of the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-first-50-words" target="_blank" class="activity-btn">Building an Expressive Vocabulary of First 50 Words</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-2-word-utterances" target="_blank" class="activity-btn">Producing 2-Word Utterances</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div id="aacCurriculum" class="page">
-                <h2>AAC Curriculum</h2>
-                <p>This curriculum supports individuals who use Augmentative and Alternative Communication systems.</p>
+                <h2>Augmentative & Alternative Communication (AAC) Curriculum</h2>
+                <p>This curriculum supports individuals who use AAC (such as picture boards, speech-generating devices, or gestures) and need support in developing functional and meaningful communication.</p>
+                <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
-                <div class="curriculum-section">
-                    <h3>Foundation Skills</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('aacBasics')">AAC System Basics</button>
-                        <button class="skill-btn" onclick="showSkillPage('deviceNavigation')">Device Navigation</button>
-                        <button class="skill-btn" onclick="showSkillPage('symbolSelection')">Symbol Selection</button>
-                        <button class="skill-btn" onclick="showSkillPage('messageFormation')">Message Formation</button>
+                <div class="level-selection">
+                    <!-- Beginner Level Card -->
+                    <div class="level-card" onclick="toggleLevel('aacCurriculum', 'beginner')">
+                        <h4>Beginner Level: AAC Foundations</h4>
+                        <p class="age-range">(Ages: 1-8 yrs and beyond)</p>
+                        <ul>
+                            <li>AAC System Basics</li>
+                            <li>Symbol Recognition</li>
+                            <li>Basic Navigation</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Intermediate Level Card -->
+                    <div class="level-card" onclick="toggleLevel('aacCurriculum', 'intermediate')">
+                        <h4>Intermediate Level: Functional Communication</h4>
+                        <p class="age-range">(Ages: 2-10 yrs and beyond)</p>
+                        <ul>
+                            <li>Requesting with AAC</li>
+                            <li>Commenting with AAC</li>
+                            <li>Basic Message Formation</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Advanced Level Card -->
+                    <div class="level-card" onclick="toggleLevel('aacCurriculum', 'advanced')">
+                        <h4>Advanced Level: Complex Communication</h4>
+                        <p class="age-range">(Ages: 3-12 yrs and beyond)</p>
+                        <ul>
+                            <li>Multi-word Messages</li>
+                            <li>Social Communication</li>
+                            <li>Conversational Skills with AAC</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
                     </div>
                 </div>
                 
-                <div class="curriculum-section">
-                    <h3>Communication Functions</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('aacRequesting')">Requesting with AAC</button>
-                        <button class="skill-btn" onclick="showSkillPage('aacCommenting')">Commenting with AAC</button>
-                        <button class="skill-btn" onclick="showSkillPage('aacProtesting')">Protesting with AAC</button>
-                        <button class="skill-btn" onclick="showSkillPage('aacQuestioning')">Asking Questions with AAC</button>
-                        <button class="skill-btn" onclick="showSkillPage('aacSocializing')">Social Communication with AAC</button>
+                <!-- Expandable Content Sections -->
+                <div id="aacCurriculum-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: AAC Foundations</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('aacCurriculum', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on establishing basic AAC skills and familiarity with the communication system.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, _____ will use their AAC system to make at least 5 different requests during a 10-minute activity with minimal prompting.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-aac-basics" target="_blank" class="activity-btn">AAC System Basics</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-aac-navigation" target="_blank" class="activity-btn">AAC Navigation Skills</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="aacCurriculum-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Functional Communication</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('aacCurriculum', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, individuals expand their AAC use to include multiple communication functions.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, _____ will use their AAC system for requesting, commenting, and protesting during structured activities with 80% accuracy.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-aac-requesting" target="_blank" class="activity-btn">Requesting with AAC</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-aac-commenting" target="_blank" class="activity-btn">Commenting with AAC</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="aacCurriculum-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Complex Communication</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('aacCurriculum', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on sophisticated communication skills using AAC for social interaction and conversation.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, _____ will engage in 3-turn conversational exchanges using their AAC system with peers and adults during social activities.</p>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-aac-social" target="_blank" class="activity-btn">Social Communication with AAC</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-aac-conversation" target="_blank" class="activity-btn">Conversational Skills with AAC</a>
+                        </div>
                     </div>
                 </div>
             </div>
