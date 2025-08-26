@@ -768,32 +768,185 @@
             <!-- BT-8008: Curriculum pages with functional content -->
             <div id="earlyInteractions" class="page">
                 <h2>Early Interactions Curriculum</h2>
-                <p>This curriculum will encourage the individual to engage, respond, and participate in social interactions.</p>
+                <p>This curriculum supports individuals who are not yet using functional communication effectively. It will encourage the individual to engage, respond, and participate in social interactions.</p>
+                <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
-                <div class="curriculum-section">
-                    <h3>Level 1 Skills</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('respondingToName')">Responding to Name</button>
-                        <button class="skill-btn" onclick="showSkillPage('jointAttention')">Joint Attention</button>
-                        <button class="skill-btn" onclick="showSkillPage('turntaking')">Turntaking</button>
-                        <button class="skill-btn" onclick="showSkillPage('earlyGestures')">Early Gestures and Body Language</button>
-                        <button class="skill-btn" onclick="showSkillPage('earlyPlaySkills')">Early Play Skills</button>
-                        <button class="skill-btn" onclick="showSkillPage('sensorySocialPlay')">Sensory Social Play</button>
-                        <button class="skill-btn" onclick="showSkillPage('earlyImitation')">Early Imitation</button>
-                        <button class="skill-btn" onclick="showSkillPage('socialRoutines')">Social Routines</button>
+                <div class="level-selection">
+                    <!-- Beginner Level Card -->
+                    <div class="level-card" onclick="toggleLevel('earlyInteractions', 'beginner')">
+                        <h4>Beginner Level: Building Awareness and Engagement</h4>
+                        <p class="age-range">(Ages: 9-15 months and beyond)</p>
+                        <ul>
+                            <li>Responding to Name</li>
+                            <li>Joint Attention</li>
+                            <li>Basic Turn Taking</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Intermediate Level Card -->
+                    <div class="level-card" onclick="toggleLevel('earlyInteractions', 'intermediate')">
+                        <h4>Intermediate Level: Understanding and Responding to Communication</h4>
+                        <p class="age-range">(Ages: 1-2 yrs and beyond)</p>
+                        <ul>
+                            <li>Following Basic Directions</li>
+                            <li>Answering Yes/No Questions</li>
+                            <li>Making a Choice Between Two Options</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
+                    </div>
+                    
+                    <!-- Advanced Level Card -->
+                    <div class="level-card" onclick="toggleLevel('earlyInteractions', 'advanced')">
+                        <h4>Advanced Level: Expanding Social Participation and Interaction</h4>
+                        <p class="age-range">(Ages: 1-3 yrs and beyond)</p>
+                        <ul>
+                            <li>Participating in Early Social Routines</li>
+                            <li>Responding to Others</li>
+                            <li>Responding to Wh- Questions</li>
+                        </ul>
+                        <p class="click-to-expand">Click to expand ▶</p>
                     </div>
                 </div>
                 
-                <div class="curriculum-section">
-                    <h3>Level 2 Skills</h3>
-                    <div class="skills-grid">
-                        <button class="skill-btn" onclick="showSkillPage('oneStepDirections')">Following One-Step Directions</button>
-                        <button class="skill-btn" onclick="showSkillPage('twoStepDirections')">Following Two-Step Directions</button>
-                        <button class="skill-btn" onclick="showSkillPage('multiStepDirections')">Following Multi-Step Directions</button>
-                        <button class="skill-btn" onclick="showSkillPage('answeringQuestions')">Answering Simple Questions</button>
-                        <button class="skill-btn" onclick="showSkillPage('familiarRoutines')">Familiar Routines</button>
-                        <button class="skill-btn" onclick="showSkillPage('newRoutines')">New/Changing Routines</button>
-                        <button class="skill-btn" onclick="showSkillPage('turntakingAdvanced')">Advanced Turntaking in Conversation</button>
+                <!-- Expandable Content Sections -->
+                <div id="earlyInteractions-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Building Awareness and Engagement</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('earlyInteractions', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, therapy focuses on building foundational social connections, helping the child recognize and respond to their name, share attention with others, and participate in simple turn-taking activities.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, ____ will improve social awareness and engagement skills by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.</p>
+                    </div>
+                    
+                    <div class="rubric-section">
+                        <h4>Rubric:</h4>
+                        <div class="rubric-item">
+                            <strong>5 – Emerging Mastery</strong>
+                            <p>Consistently responds to name, actively shares attention during play (e.g., looks between object and adult, points/showing), and initiates or participates in turn-taking activities with minimal support.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>4 – Strong Progress</strong>
+                            <p>Responds to name in most settings; shares joint attention with adult support (e.g., follows gaze or pointing); participates in familiar turn-taking routines but may need reminders or prompts to stay engaged.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>3 – Developing</strong>
+                            <p>Inconsistently responds to name; shows some awareness of shared activities but rarely shifts attention between people and objects; may imitate turn-taking actions but needs frequent support to participate.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>2 – Emerging Skills</strong>
+                            <p>Rarely responds to name; joint attention is limited or absent (focuses only on object or person, not both); turn-taking occurs only with high levels of prompting and modeling.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>1 – Limited/Not Yet Observed</strong>
+                            <p>Does not respond to name; no observable joint attention; does not engage in or attempt turn-taking activities even with adult modeling.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, use the suggested activities below:</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-responding-to-name" target="_blank" class="activity-btn">Responding to Name</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-joint-attention" target="_blank" class="activity-btn">Joint Attention and Turn Taking</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="earlyInteractions-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Understanding and Responding to Communication</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('earlyInteractions', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At this stage, the child builds on their social engagement skills by learning to understand and respond to simple communication cues. They are learning how to follow directions and make choices, which allows for increased participation in their environment.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, ____ will improve social understanding and responding skills by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.</p>
+                    </div>
+                    
+                    <div class="rubric-section">
+                        <h4>Rubric:</h4>
+                        <div class="rubric-item">
+                            <strong>5 – Emerging Mastery</strong>
+                            <p>Consistently follows common one-step directions in various settings, accurately answers yes/no questions to express preferences, and clearly makes choices between two options using words, gestures, or AAC.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>4 – Strong Progress</strong>
+                            <p>Follows one-step directions with minimal support or cues, answers yes/no questions in familiar contexts, and makes choices between two options when prompted or offered in a structured setting.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>3 – Developing</strong>
+                            <p>Follows simple directions inconsistently and/or only in familiar routines; shows emerging understanding of yes/no questions (e.g., sometimes nods, gestures, or gives unclear answers); can make a choice when given support or a model.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>2 – Emerging Skills</strong>
+                            <p>Responds to directions only with frequent prompting or modeling; rarely responds to yes/no questions or choices without full assistance, or may repeat the question or last option given instead of responding.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>1 – Limited/Not Yet Observed</strong>
+                            <p>Does not follow one-step directions, answer yes/no questions, or make choices between two presented options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, choose one or more of the suggested activities below. You can present them in any order and skip any activities the individual has already mastered.</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/language-skills-following-basic-directions" target="_blank" class="activity-btn">Following Basic Directions</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/language-skills-answering-yesno-questions" target="_blank" class="activity-btn">Answering Yes/No Questions</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-making-choices" target="_blank" class="activity-btn">Making a Choice Between Two Options</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="earlyInteractions-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Expanding Social Participation and Interaction</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('earlyInteractions', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, the child strengthens social communication skills and builds the ability to participate in early social routines and engage in longer interactions. They learn to respond to a wider variety of questions and begin engaging in back-and-forth exchanges with more independence.</p>
+                    
+                    <div class="goal-box">
+                        <h4>Sample Goal:</h4>
+                        <p>By the end of the reporting period, ____ will improve social participation and interaction by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.</p>
+                    </div>
+                    
+                    <div class="rubric-section">
+                        <h4>Rubric:</h4>
+                        <div class="rubric-item">
+                            <strong>5 – Emerging Mastery</strong>
+                            <p>Actively participates in familiar social routines with minimal prompting, maintains attention and engagement during multi-turn social interactions, and consistently responds to "What," "Where," and "Who" questions in familiar situations.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>4 – Strong Progress</strong>
+                            <p>Joins in common social games and routines when prompted, stays engaged in short interactions with support, and responds accurately to some WH- questions with occasional prompts or cues.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>3 – Developing</strong>
+                            <p>Occasionally participates in social routines with frequent support, briefly attends to back-and-forth interactions, and shows emerging understanding of WH- questions (may respond correctly in highly familiar contexts).</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>2 – Emerging Skills</strong>
+                            <p>Rarely joins social routines, attention to interaction is fleeting, and WH- questions are typically unanswered or the question is repeated instead of answered.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <strong>1 – Limited/Not Yet Observed</strong>
+                            <p>Not yet participating in familiar social routines, minimal engagement in social exchanges, and no observable response to "What," "Where," or "Who" questions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="activities-section">
+                        <h4>Therapy Activities:</h4>
+                        <p>To make progress in this area, choose one or more of the suggested activities below. You can present them in any order and skip any activities the individual has already mastered.</p>
+                        <div class="activity-grid">
+                            <a href="https://hub.speechandlanguagekids.com/posts/functional-communication-social-routines" target="_blank" class="activity-btn">Participating in Early Social Routines</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/social-skills-responding-to-others" target="_blank" class="activity-btn">Responding to Others</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/language-skills-answering-wh-questions" target="_blank" class="activity-btn">Respond to Wh- Questions</a>
+                        </div>
                     </div>
                 </div>
             </div>
