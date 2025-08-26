@@ -1,4 +1,4 @@
-# SLK Curriculum Planning Tool
+# SLK Curriculum Planning Tool (with the weird skill grid issues, 70% working buttons)
 
 A comprehensive web application for speech-language therapy curriculum planning.
 
