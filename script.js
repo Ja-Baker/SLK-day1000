@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize expandable sections if any exist
     initializeExpandableSections();
+    
+    // Try to initialize curriculum pages immediately
+    initializeCurriculumPages();
+    
+    // Also try after a delay in case curriculum data loads async
+    setTimeout(function() {
+        initializeCurriculumPages();
+    }, 500);
 });
 
 // Function to show a specific page
@@ -343,3 +351,157 @@ window.addEventListener('DOMContentLoaded', function() {
         console.log('✅ All PDF download functions verified and available');
     }, 1000);
 });
+
+// Initialize curriculum pages with proper level card structure
+function initializeCurriculumPages() {
+    // Check if curriculum data is available
+    if (typeof curriculumData === 'undefined') {
+        console.warn('Curriculum data not loaded yet');
+        return;
+    }
+    
+    // Map of page IDs to curriculum data keys
+    const curriculumMapping = {
+        'earlyInteractions': 'earlyInteractions',
+        'analyticLanguage': 'analyticLanguage',
+        'gestaltLanguage': 'gestaltLanguage',
+        'aacCurriculum': 'aacCurriculum',
+        'articulation': 'articulation',
+        'phonology': 'phonology',
+        'cyclesPhonology': 'cyclesPhonology',
+        'motorSpeech': 'motorSpeech',
+        'mumbling': 'mumbling',
+        'followingDirections': 'followingDirections',
+        'sequencing': 'sequencing',
+        'abstractLanguage': 'abstractLanguage',
+        'vocabulary': 'vocabulary',
+        'askingAnswering': 'askingAnswering',
+        'grammarSyntax': 'grammarSyntax',
+        'literacyFoundations': 'literacyFoundations',
+        'cyclesLanguage': 'cyclesLanguage',
+        'healthyVoice': 'healthyVoice',
+        'voice': 'voice',
+        'resonance': 'resonance',
+        'prosody': 'prosody',
+        'socialAwareness': 'socialAwareness',
+        'emotionalRegulation': 'emotionalRegulation',
+        'conversationalSkills': 'conversationalSkills',
+        'selectiveMutism': 'selectiveMutism',
+        'foundationsFluency': 'foundationsFluency',
+        'wordFinding': 'wordFinding',
+        'stuttering': 'stuttering',
+        'cluttering': 'cluttering'
+    };
+    
+    // Populate each curriculum page with proper structure
+    Object.keys(curriculumMapping).forEach(pageId => {
+        const dataKey = curriculumMapping[pageId];
+        const curriculum = curriculumData[dataKey];
+        const pageElement = document.getElementById(pageId);
+        
+        if (pageElement && curriculum) {
+            let html = `
+                <h2>${curriculum.title}</h2>
+                <p>${curriculum.description}</p>
+                <div class="level-selection">
+            `;
+            
+            // Add level cards
+            if (curriculum.levels) {
+                ['beginner', 'intermediate', 'advanced'].forEach(levelKey => {
+                    const level = curriculum.levels[levelKey];
+                    if (level) {
+                        html += `
+                            <div class="level-card" onclick="toggleLevel('${pageId}', '${levelKey}')">
+                                <h4>${level.title}</h4>
+                                <p class="age-range">${level.ageRange}</p>
+                                <ul>
+                        `;
+                        
+                        level.skills.forEach(skill => {
+                            html += `<li>${skill}</li>`;
+                        });
+                        
+                        html += `
+                                </ul>
+                                <p class="click-to-expand">Click to expand ▶</p>
+                            </div>
+                        `;
+                    }
+                });
+            }
+            
+            html += `</div>`;
+            
+            // Add expandable content sections for each level
+            if (curriculum.levels) {
+                ['beginner', 'intermediate', 'advanced'].forEach(levelKey => {
+                    const level = curriculum.levels[levelKey];
+                    if (level) {
+                        html += `
+                            <div id="${pageId}-${levelKey}" class="level-content" style="display:none;">
+                                <div class="level-header">
+                                    <h3>${level.title}</h3>
+                                    <button class="collapse-btn" onclick="toggleLevel('${pageId}', '${levelKey}')">Collapse ▲</button>
+                                </div>
+                                ${level.goal ? `
+                                    <div class="goal-box">
+                                        <h4>Sample Goal:</h4>
+                                        <p>${level.goal}</p>
+                                    </div>
+                                ` : ''}
+                                ${level.rubric ? `
+                                    <div class="rubric-section">
+                                        <h4>Rubric:</h4>
+                                        ${level.rubric.map(item => `
+                                            <div class="rubric-item">
+                                                <strong>${item.score}</strong>
+                                                <p>${item.description}</p>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                ` : ''}
+                                ${level.activities ? `
+                                    <div class="activities-section">
+                                        <h4>Therapy Activities:</h4>
+                                        <div class="activity-grid">
+                                            ${level.activities.map(activity => `
+                                                <button class="activity-btn" onclick="showSkillPage('${activity.pageId}')">
+                                                    ${activity.name}
+                                                </button>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `;
+                    }
+                });
+            }
+            
+            pageElement.innerHTML = html;
+        }
+    });
+}
+
+// Function to toggle level content expansion
+function toggleLevel(curriculumId, level) {
+    const contentElement = document.getElementById(`${curriculumId}-${level}`);
+    const levelCards = document.querySelectorAll(`#${curriculumId} .level-card`);
+    
+    if (contentElement) {
+        if (contentElement.style.display === 'none') {
+            // Hide all other level contents
+            document.querySelectorAll(`#${curriculumId} .level-content`).forEach(el => {
+                el.style.display = 'none';
+            });
+            // Show this level content
+            contentElement.style.display = 'block';
+            // Scroll to content
+            contentElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+            // Hide this level content
+            contentElement.style.display = 'none';
+        }
+    }
+}

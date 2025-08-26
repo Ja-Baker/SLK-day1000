@@ -219,6 +219,216 @@ p {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.curriculum-item-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: var(--white);
+    color: var(--text-dark);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.curriculum-item-btn:hover {
+    background-color: #f0f9fb;
+    border-color: #007a8c;
+    transform: translateX(5px);
+}
+
+.skill-link {
+    display: inline-block;
+    color: var(--blue);
+    text-decoration: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin: var(--spacing-xs);
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.skill-link:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.curriculum-categories h3,
+.skills-categories h3 {
+    color: var(--purple);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.curriculum-items,
+.skills-list {
+    margin-bottom: var(--spacing-lg);
+}
+
+.skills-section h4 {
+    color: var(--green);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.jump-section {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Level Cards and Content */
+.level-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.level-card {
+    background: var(--white);
+    border: 2px solid var(--green);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-color: var(--purple);
+}
+
+.level-card h4 {
+    color: var(--purple);
+    margin-bottom: var(--spacing-xs);
+}
+
+.level-card .age-range {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.level-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.level-card li {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.click-to-expand {
+    color: var(--blue);
+    font-weight: bold;
+    text-align: center;
+    margin-top: var(--spacing-sm);
+}
+
+.level-content {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.collapse-btn {
+    background: var(--purple);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.collapse-btn:hover {
+    background: #9a6c9c;
+}
+
+.goal-box {
+    background: var(--white);
+    border-left: 4px solid var(--green);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: 8px;
+}
+
+.rubric-section {
+    margin: var(--spacing-md) 0;
+}
+
+.rubric-item {
+    background: var(--white);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.rubric-item strong {
+    color: var(--purple);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.activities-section {
+    margin-top: var(--spacing-lg);
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.activity-btn {
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.activity-btn:hover {
+    background: #007a8c;
+    transform: translateY(-2px);
+}
+
 /* Layout Components */
 .welcome-section {
     text-align: center;

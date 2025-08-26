@@ -82,16 +82,20 @@
             <!-- Jump to Curriculum Page -->
             <div id="jumpToCurriculum" class="page">
                 <h2>Jump Straight to a Specific Curriculum or Skill</h2>
-                <p>Select a curriculum area below:</p>
                 
-                <div class="curriculum-grid">
-                    <button class="curriculum-btn" onclick="showPage('needsFunctionalComm')">Functional Communication</button>
-                    <button class="curriculum-btn" onclick="showPage('speechSounds')">Speech Sounds</button>
-                    <button class="curriculum-btn" onclick="showPage('language')">Language</button>
-                    <button class="curriculum-btn" onclick="showPage('voiceResonance')">Voice/Resonance</button>
-                    <button class="curriculum-btn" onclick="showPage('socialCommunication')">Social Communication</button>
-                    <button class="curriculum-btn" onclick="showPage('fluency')">Fluency</button>
+                <div class="jump-section">
+                    <h3>Jump to a Curriculum:</h3>
+                    <p>Browse by communication challenge (ex: "vocabulary")</p>
+                    <button class="primary-btn" onclick="showPage('curriculumList')">View the List of Curriculums</button>
                 </div>
+                
+                <div class="jump-section">
+                    <h3>Jump to a Skill:</h3>
+                    <p>Browse by specific skill (ex: "multiple meaning words")</p>
+                    <button class="primary-btn" onclick="showPage('skillsList')">View the List of Skills</button>
+                </div>
+                
+                <hr class="section-divider">
             </div>
 
             <!-- Checklists Page -->
@@ -118,6 +122,184 @@
                 <p>Download visual cues and aids to support children with communication challenges.</p>
                 <div class="download-section" id="visualsContent" data-bt="8008">
                     <div class="loading-content">Loading visual supports...</div>
+                </div>
+            </div>
+
+            <!-- Curriculum List Page -->
+            <div id="curriculumList" class="page">
+                <h2>Jump to a Curriculum</h2>
+                <p>Choose a <strong>Therapy Curriculum</strong> below to explore recommended skills and therapy targets.</p>
+                
+                <div class="curriculum-categories">
+                    <h3>Speech Sounds</h3>
+                    <div class="curriculum-items">
+                        <button class="curriculum-item-btn" onclick="showPage('cyclesPhonology')">
+                            <strong>Cycles Approach to Speech Sounds Curriculum</strong> - This is a great option for individuals with many sound errors. You'll take a cyclical approach to therapy by working on each sound error for 1-2 weeks and cycling between targeting multiple sounds or phonological processes.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('articulation')">
+                            <strong>Articulation Curriculum</strong> – Choose this if the individual has difficulty with specific speech sounds, producing them incorrectly or with noticeable distortions.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('phonology')">
+                            <strong>Phonology Curriculum</strong> – Select this if the individual demonstrates consistent patterns of speech errors, such as omitting sounds at the beginning or end of words.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('motorSpeech')">
+                            <strong>Motor Speech Curriculum</strong> – Opt for this if the individual has inconsistent speech errors, struggles more with longer words, or sounds choppy and robotic.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('mumbling')">
+                            <strong>Mumbling Curriculum</strong> – If the individual speaks too quickly, too quietly, or slurs their words, this pathway focuses on speech clarity and intelligibility.
+                        </button>
+                    </div>
+                    
+                    <h3>Language</h3>
+                    <div class="curriculum-items">
+                        <button class="curriculum-item-btn" onclick="showPage('cyclesLanguage')">
+                            <strong>Cycles Approach to Language Curriculum</strong> - This is a great option for individuals who are struggling in multiple different areas of language development.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('followingDirections')">
+                            <strong>Following Directions Curriculum</strong> – Choose this if the individual struggles to follow one-step or multi-step directions.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('askingAnswering')">
+                            <strong>Asking and Answering Questions Curriculum</strong> – Select this if the individual has difficulty answering basic WH-questions or asking questions.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('sequencing')">
+                            <strong>Sequencing & Retelling Curriculum</strong> – Opt for this if the individual struggles to retell events or stories in order.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('grammarSyntax')">
+                            <strong>Grammar & Sentence Complexity Curriculum</strong> – If the individual's speech contains frequent grammar errors or their sentences are simpler than expected.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('literacyFoundations')">
+                            <strong>Foundations for Literacy Curriculum</strong> – Choose this if the individual struggles with early reading skills like phonological awareness.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('abstractLanguage')">
+                            <strong>Abstract Language Curriculum</strong> – Select this if the individual has difficulty understanding figurative language or making inferences.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('vocabulary')">
+                            <strong>Vocabulary Curriculum</strong> – Opt for this if the individual uses vague language or has difficulty understanding new words.
+                        </button>
+                    </div>
+                    
+                    <h3>Social Communication</h3>
+                    <div class="curriculum-items">
+                        <button class="curriculum-item-btn" onclick="showPage('socialAwareness')">
+                            <strong>Social Awareness and Interaction Curriculum</strong> – Choose this pathway if the individual needs support in responding to others and understanding perspectives.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('emotionalRegulation')">
+                            <strong>Emotional Regulation & Self-Advocacy Curriculum</strong> – Choose this pathway if the individual struggles with communicating basic wants and needs.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('conversationalSkills')">
+                            <strong>Conversational Skills Curriculum</strong> – Choose this pathway if the individual needs help with initiating and maintaining conversations.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('abstractLanguageSocial')">
+                            <strong>Abstract Language Curriculum</strong> – Choose this pathway if the individual has difficulty understanding figurative language or sarcasm in conversations.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('selectiveMutism')">
+                            <strong>Selective Mutism Curriculum</strong> – Choose this pathway if the individual is able to speak in some situations but experiences anxiety in specific social settings.
+                        </button>
+                    </div>
+                    
+                    <h3>Fluency</h3>
+                    <div class="curriculum-items">
+                        <button class="curriculum-item-btn" onclick="showPage('foundationsFluency')">
+                            <strong>Foundations for Fluency Curriculum</strong> – Select this pathway to build essential fluency skills, including breath control and emotional regulation.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('stuttering')">
+                            <strong>Stuttering Curriculum</strong> – Select this pathway if the individual experiences stuttering and needs structured strategies.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('cluttering')">
+                            <strong>Cluttering Curriculum</strong> – Select this pathway if speech tends to be too fast, disorganized, or difficult to understand.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('wordFinding')">
+                            <strong>Word Finding/Word Retrieval Curriculum</strong> – Select this pathway if the individual struggles with finding the right words.
+                        </button>
+                    </div>
+                    
+                    <h3>Functional Communication</h3>
+                    <div class="curriculum-items">
+                        <button class="curriculum-item-btn" onclick="showPage('earlyInteractions')">
+                            <strong>Early Interactions Curriculum</strong> – Select this pathway if the child is working on basic social engagement and responding to their name.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('analyticLanguage')">
+                            <strong>Analytic Language Processors (ALP) Curriculum</strong> – Select this pathway if the child learns language through individual words and phrases.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('gestaltLanguage')">
+                            <strong>Gestalt Language Processors (GLP) Curriculum</strong> – Select this pathway if the child learns language through echolalia or scripts.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('aacCurriculum')">
+                            <strong>Augmentative & Alternative Communication (AAC) Curriculum</strong> – Select this pathway if the child uses AAC or needs alternative means of communication.
+                        </button>
+                    </div>
+                    
+                    <h3>Voice/Resonance</h3>
+                    <div class="curriculum-items">
+                        <button class="curriculum-item-btn" onclick="showPage('healthyVoice')">
+                            <strong>Foundations of Healthy Voice Use Curriculum</strong> – Choose this pathway to improve vocal hygiene and reduce strain.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('voice')">
+                            <strong>Voice Curriculum</strong> – Choose this pathway to improve vocal quality due to strain or tension.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('resonance')">
+                            <strong>Resonance Curriculum</strong> – Choose this pathway to address hypernasality or nasal emission.
+                        </button>
+                        <button class="curriculum-item-btn" onclick="showPage('prosody')">
+                            <strong>Prosody Curriculum</strong> – Choose this pathway to improve pitch, volume, or rate for more natural speech.
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills List Page -->
+            <div id="skillsList" class="page">
+                <h2>Jump to a Specific Skill</h2>
+                <p>Browse specific therapy skills below:</p>
+                
+                <div class="skills-categories">
+                    <h3>Speech Sound Skills:</h3>
+                    <div class="skills-section">
+                        <h4>Phonology Skills</h4>
+                        <div class="skills-list">
+                            <a href="https://hub.speechandlanguagekids.com/posts/therapy-approaches-cycles-approach-to-phonology" target="_blank" class="skill-link">Cycles Approach</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-final-consonant-deletion" target="_blank" class="skill-link">Final Consonant Deletion</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-initial-consonant-deletion" target="_blank" class="skill-link">Initial Consonant Deletion</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-unstressed-syllable-deletion-multisyllabic-word-reduction" target="_blank" class="skill-link">Unstressed Syllable Deletion</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-velar-fronting" target="_blank" class="skill-link">Velar Fronting</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-backing" target="_blank" class="skill-link">Backing</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-cluster-reduction" target="_blank" class="skill-link">Cluster Reduction</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-gliding-of-liquids-l-and-r" target="_blank" class="skill-link">Gliding of Liquids (/l/ and /r/)</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-stopping-of-fricatives" target="_blank" class="skill-link">Stopping of Fricatives</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-prevocalic-voicing" target="_blank" class="skill-link">Prevocalic Voicing</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-postvocalic-devoicing" target="_blank" class="skill-link">Postvocalic Devoicing</a>
+                        </div>
+                        
+                        <h4>Articulation Skills</h4>
+                        <div class="skills-list">
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-b-sound" target="_blank" class="skill-link">/b/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-ch-%E2%81%A0t%CA%83%E2%81%A0-sound" target="_blank" class="skill-link">"ch" sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-d-sound" target="_blank" class="skill-link">/d/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-f-sound" target="_blank" class="skill-link">/f/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-g-sound" target="_blank" class="skill-link">/g/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-h-sound" target="_blank" class="skill-link">/h/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-j-d%CA%92-sound" target="_blank" class="skill-link">"j" sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-k-sound" target="_blank" class="skill-link">/k/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-l-sound-as-in-lamp" target="_blank" class="skill-link">/l/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-m-sound" target="_blank" class="skill-link">/m/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-n-sound" target="_blank" class="skill-link">/n/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-ng-ng-sound" target="_blank" class="skill-link">"ng" sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-p-sound" target="_blank" class="skill-link">/p/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-r-sound" target="_blank" class="skill-link">/r/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-s-sound" target="_blank" class="skill-link">/s/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-sh-%CA%83-sound" target="_blank" class="skill-link">"sh" sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-t-sound" target="_blank" class="skill-link">/t/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-th-%CE%B8-d-sound" target="_blank" class="skill-link">"th" sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-v-sound" target="_blank" class="skill-link">/v/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-w-sound" target="_blank" class="skill-link">/w/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-y-j-sound" target="_blank" class="skill-link">"y" sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-z-sound" target="_blank" class="skill-link">/z/ sound</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-vowel-sounds" target="_blank" class="skill-link">Vowel sounds</a>
+                            <a href="https://hub.speechandlanguagekids.com/posts/speech-sound-skills-consonant-blendsclusters" target="_blank" class="skill-link">Consonant Blends/Clusters</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Continue with more skill categories -->
                 </div>
             </div>
 
