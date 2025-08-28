@@ -173,12 +173,15 @@ p {
 .secondary-btn {
     background-color: var(--blue);
     color: var(--white);
+    border: 2px solid var(--blue);
+    box-shadow: 0 2px 4px rgba(0, 147, 172, 0.2);
 }
 
 .secondary-btn:hover {
     background-color: #007a8c;
+    border-color: #007a8c;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 147, 172, 0.3);
 }
 
 .choice-btn {
