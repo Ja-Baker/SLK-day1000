@@ -1208,6 +1208,20 @@ p {
     background: linear-gradient(135deg, #d64487 0%, var(--pink) 100%);
 }
 
+.activity-btn.disabled,
+.activity-btn:disabled {
+    background: var(--gray);
+    color: var(--dark-gray);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.activity-btn.disabled:hover,
+.activity-btn:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 .resource-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

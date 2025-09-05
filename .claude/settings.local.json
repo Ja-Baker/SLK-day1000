@@ -9,7 +9,8 @@
       "Bash(echo:*)",
       "Bash(done)",
       "Bash(for page in literacyFoundations cyclesLanguage healthyVoice voice resonance prosody socialAwareness emotionalRegulation conversationalSkills selectiveMutism foundationsFluency wordFinding stuttering cluttering)",
-      "Bash(do grep -q \"id=\"\"$page\"\"\" /mnt/c/Users/insti/OneDrive/Documents/WORKING SLK REPO/SLK-UNIFIED/BT-SLK-day1000/index.html)"
+      "Bash(do grep -q \"id=\"\"$page\"\"\" /mnt/c/Users/insti/OneDrive/Documents/WORKING SLK REPO/SLK-UNIFIED/BT-SLK-day1000/index.html)",
+      "Read(/mnt/c/Users/insti/OneDrive/Documents/**)"
     ],
     "deny": [],
     "ask": []

@@ -46,7 +46,7 @@ const curriculumData = {
             advanced: {
                 title: "Advanced Level: Expanding Social Participation and Interaction",
                 ageRange: "(Ages: 1-3 yrs and beyond)",
-                skills: ["Participating in Early Social Routines", "Increasing Interaction Length", "Answering Wh- Questions"],
+                skills: ["Participating in Early Social Routines", "Answering Wh- Questions"],
                 goal: "By the end of the reporting period, ____ will improve social participation and interaction by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
                 rubric: [
                     { score: "5 – Emerging Mastery", description: "Actively participates in familiar social routines with minimal prompting, maintains attention and engagement during multi-turn social interactions, and consistently responds to \"What,\" \"Where,\" and \"Who\" questions in familiar situations." },
