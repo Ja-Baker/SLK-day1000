@@ -1,16 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Read(//mnt/c/Users/insti/Downloads/**)",
-      "Bash(grep:*)",
-      "Read(//mnt/c/Users/insti/Downloads/**)",
-      "Bash(for page in earlyInteractions analyticLanguage gestaltLanguage aacCurriculum articulation phonology motorSpeech mumbling cyclesPhonology followingDirections askingAnswering sequencing abstractLanguage grammarSyntax vocabulary literacyFoundations cyclesLanguage healthyVoice voice resonance prosody socialAwareness emotionalRegulation conversationalSkills selectiveMutism foundationsFluency wordFinding stuttering cluttering)",
-      "Bash(do grep -q \"id=\"\"$page\"\"\" index.html)",
-      "Bash(echo:*)",
-      "Bash(done)",
-      "Bash(for page in literacyFoundations cyclesLanguage healthyVoice voice resonance prosody socialAwareness emotionalRegulation conversationalSkills selectiveMutism foundationsFluency wordFinding stuttering cluttering)",
-      "Bash(do grep -q \"id=\"\"$page\"\"\" /mnt/c/Users/insti/OneDrive/Documents/WORKING SLK REPO/SLK-UNIFIED/BT-SLK-day1000/index.html)",
-      "Read(/mnt/c/Users/insti/OneDrive/Documents/**)"
+      "Read(//mnt/c/Users/insti/OneDrive/Documents/**)"
     ],
     "deny": [],
     "ask": []
