@@ -1,8 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Read(//mnt/c/Users/insti/Downloads/**)",
-      "Bash(grep:*)"
+      "Read(//mnt/c/Users/insti/OneDrive/Documents/**)"
     ],
     "deny": [],
     "ask": []

@@ -6,131 +6,207 @@ const skillPagesContent = {
     respondingToName: {
         title: "Responding to Name",
         category: "Early Interactions",
-        externalLink: externalLinksMapping.socialCommunication.awarenessOfOthers.respondingToTheirName,
-        content: `
-            <p>This skill focuses on helping children consistently respond when their name is called, which is foundational for social engagement and communication.</p>
-            <h4>Key Activities:</h4>
-            <ul>
-                <li>Practice name-calling during preferred activities</li>
-                <li>Use visual cues along with verbal name-calling</li>
-                <li>Start close and gradually increase distance</li>
-                <li>Pair name with positive interactions</li>
-            </ul>
-        `
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-responding-to-their-name",
+        content: ``
     },
 
     jointAttentionTurnTaking: {
         title: "Joint Attention and Turn Taking",
         category: "Early Interactions",
-        externalLink: externalLinksMapping.socialCommunication.awarenessOfOthers.improvingJointAttentionAndTurnTaking,
-        content: `
-            <p>Joint attention and turn-taking are crucial early social skills that form the foundation for later communication development.</p>
-            <h4>Key Activities:</h4>
-            <ul>
-                <li>Practice looking back and forth between objects and people</li>
-                <li>Simple turn-taking games like rolling a ball</li>
-                <li>Pointing and following pointing gestures</li>
-                <li>Shared book reading with commenting</li>
-            </ul>
-        `
+        externalLink: "https://hub.speechandlanguagekids.com/posts/functional-communication-joint-attention",
+        content: ``
     },
 
     followingBasicDirections: {
-        title: "Following Basic Directions",
-        category: "Early Interactions",
-        externalLink: externalLinksMapping.functionalCommunication.followingDirections,
-        content: `
-            <p>This skill involves understanding and following simple one-step instructions in various contexts.</p>
-            <h4>Key Activities:</h4>
-            <ul>
-                <li>Start with familiar routines and actions</li>
-                <li>Use visual supports and gestures</li>
-                <li>Practice with preferred objects and activities</li>
-                <li>Gradually increase complexity</li>
-            </ul>
-        `
+        title: "Following One-Step Directions (Routine and Novel)",
+        category: "Following Directions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-following-directions-42140345",
+        content: ``
+    },
+
+    followingTwoStepDirections: {
+        title: "Following 2-Step Directions (Routine and Novel)",
+        category: "Following Directions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-following-directions-42140345",
+        content: ``
+    },
+
+    followingThreeStepDirections: {
+        title: "3-Step Directions (Routine and Novel)",
+        category: "Following Directions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-following-directions-42140345",
+        content: ``
+    },
+
+    followingClassroomDirections: {
+        title: "Following Classroom, Academic, and Larger Functional Directions",
+        category: "Following Directions",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     },
 
     answeringYesNoQuestions: {
         title: "Answering Yes/No Questions",
         category: "Early Interactions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringYesNoQuestions,
-        content: `
-            <p>Learning to answer yes/no questions helps children express preferences and participate in decision-making.</p>
-            <h4>Key Activities:</h4>
-            <ul>
-                <li>Start with concrete preference questions</li>
-                <li>Use visual supports (thumbs up/down, head nods)</li>
-                <li>Practice with real choices during daily activities</li>
-                <li>Gradually move to more abstract questions</li>
-            </ul>
-        `
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-yesno-questions",
+        content: ``
     },
 
     // FUNCTIONAL COMMUNICATION - FIRST WORDS
     encouragingFirstWords: {
-        title: "Encouraging First Words",
+        title: "Encouraging First Words through Indirect Language Stimulation",
         category: "Functional Communication",
-        externalLink: externalLinksMapping.functionalCommunication.indirectLanguageStimulation,
-        content: `
-            <p>Using indirect language stimulation techniques to encourage first word production in late talkers.</p>
-            <h4>Key Strategies:</h4>
-            <ul>
-                <li>Model language during play without requiring imitation</li>
-                <li>Use self-talk and parallel talk</li>
-                <li>Expand on child's vocalizations</li>
-                <li>Create communication opportunities</li>
-            </ul>
-        `
+        externalLink: "https://hub.speechandlanguagekids.com/posts/functional-communication-indirect-language-stimulation-for-late-talkers-or-non-speaking-children",
+        content: ``
     },
 
     producingCVCWords: {
-        title: "Producing CV, VC, and CVC Words",
+        title: "Producing CV, VC, and CVC Words for Functional Communication",
         category: "Functional Communication",
-        externalLink: externalLinksMapping.functionalCommunication.speakingCvVcCvcWords,
-        content: `
-            <p>Building early word shapes for functional communication using simple syllable structures.</p>
-            <h4>Target Words:</h4>
-            <ul>
-                <li>CV words: go, me, no, hi</li>
-                <li>VC words: up, on, off, out</li>
-                <li>CVC words: dog, cat, mom, dad</li>
-                <li>Focus on functional vocabulary</li>
-            </ul>
-        `
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-producing-sounds-in-cv-vc-cvc-words",
+        content: ``
     },
 
     buildingFirst50Words: {
-        title: "Building First 50 Words",
+        title: "Building an Expressive Vocabulary of First 50 Words",
         category: "Functional Communication",
-        externalLink: externalLinksMapping.functionalCommunication.buildingExpressiveVocabularyFirst50Words,
-        content: `
-            <p>Developing a functional expressive vocabulary of the most important first words.</p>
-            <h4>Core Categories:</h4>
-            <ul>
-                <li>People names (mama, dada)</li>
-                <li>Social words (hi, bye, please)</li>
-                <li>Action words (go, stop, eat)</li>
-                <li>Descriptive words (big, hot, more)</li>
-            </ul>
-        `
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-first-50-words",
+        content: ``
     },
 
-    // GESTALT LANGUAGE PROCESSORS
+    producing2WordUtterances: {
+        title: "Producing 2-Word Utterances",
+        category: "Functional Communication",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-producing-2-word-utterances-combining-words-together",
+        content: ``
+    },
+
+    // PAGE 54
+    respondingToEarlyGestalts: {
+        title: "Responding to and Modeling Early Gestalts",
+        category: "Gestalt Language Processing",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/functional-communication-increasing-communication-for-early-gestalt-language-processors",
+        content: ``
+    },
+
+    // PAGE 55
+    breakingDownGestalts: {
+        title: "Breaking Down and Mixing and Matching Gestalts",
+        category: "Gestalt Language Processing",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/functional-communication-increasing-communication-for-early-gestalt-language-processors",
+        content: ``
+    },
+
+    // PAGE 56
+    earlyFunctionalAAC: {
+        title: "Early Functional Communication Using AAC",
+        category: "AAC",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/functional-communication-beginning-aac-use-early-functional-communication",
+        content: ``
+    },
+
+    // PAGE 57
+    expandingCommunicationAAC: {
+        title: "Expanding Communication through AAC",
+        category: "AAC",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/functional-communication-expanding-language-skills-through-aac",
+        content: ``
+    },
+
+    // PAGE 58
+    bSound: {
+        title: "/b/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-b-sound",
+        content: ``
+    },
+
+    // PAGE 59
+    mSound: {
+        title: "/m/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-m-sound",
+        content: ``
+    },
+
+    // PAGE 60
+    nSound: {
+        title: "/n/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-n-sound",
+        content: ``
+    },
+
+    // PAGE 61
+    pSound: {
+        title: "/p/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-p-sound",
+        content: ``
+    },
+
+    // PAGE 62
+    hSound: {
+        title: "/h/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-h-sound",
+        content: ``
+    },
+
+    // PAGE 63
+    wSound: {
+        title: "/w/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-w-sound",
+        content: ``
+    },
+
+    // PAGE 64
+    dSound: {
+        title: "/d/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-d-sound",
+        content: ``
+    },
+
+    // PAGE 65
+    vowelSounds: {
+        title: "Vowel Sounds",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-vowel-sounds",
+        content: ``
+    },
+
+    // PAGE 66
+    kSound: {
+        title: "/k/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-k-sound",
+        content: ``
+    },
+
+    // PAGE 67
+    gSound: {
+        title: "/g/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-g-sound",
+        content: ``
+    },
+
+    // PAGE 68
+    fSound: {
+        title: "/f/ Sound",
+        category: "Articulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-f-sound",
+        content: ``
+    },
+
+    // GESTALT LANGUAGE PROCESSORS (existing entry - needs verification against markdown)
     gestaltLanguageProcessing: {
         title: "Supporting Gestalt Language Processors",
         category: "Functional Communication",
         externalLink: externalLinksMapping.functionalCommunication.increasingCommunicationForGLPs,
-        content: `
-            <p>Supporting children who learn language through scripts and echolalia to develop flexible communication.</p>
-            <h4>Key Strategies:</h4>
-            <ul>
-                <li>Acknowledge and respond to scripts as communication</li>
-                <li>Model meaningful gestalts in context</li>
-                <li>Support script mixing and mitigating</li>
-                <li>Build toward self-generated language</li>
-            </ul>
-        `
+        content: ``
     },
 
     // AAC SKILLS
@@ -175,10 +251,10 @@ const skillPagesContent = {
     },
 
     chSound: {
-        title: "CH Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.chSound,
-        content: `<p>Teaching correct production of the CH sound in all word positions.</p>`
+        title: "/ʧ/ (\"ch\") Sound",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-ch-%E2%81%A0t%CA%83%E2%81%A0-sound",
+        content: ``
     },
 
     dSound: {
@@ -210,10 +286,10 @@ const skillPagesContent = {
     },
 
     jSound: {
-        title: "J Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.jSound,
-        content: `<p>Teaching correct production of the J sound in all word positions.</p>`
+        title: "/ʤ/ (\"j\") Sound",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-j-d%CA%92-sound",
+        content: ``
     },
 
     kSound: {
@@ -225,9 +301,9 @@ const skillPagesContent = {
 
     lSound: {
         title: "/l/ Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.lSound,
-        content: `<p>Teaching correct production of the /l/ sound in all word positions.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-l-sound-as-in-lamp",
+        content: ``
     },
 
     mSound: {
@@ -260,23 +336,23 @@ const skillPagesContent = {
 
     rSound: {
         title: "/r/ Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.rSound,
-        content: `<p>Teaching correct production of the /r/ sound in all word positions.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-r-sound",
+        content: ``
     },
 
     sSound: {
         title: "/s/ Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.sSound,
-        content: `<p>Teaching correct production of the /s/ sound in all word positions.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-s-sound",
+        content: ``
     },
 
     shSound: {
-        title: "SH Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.shSound,
-        content: `<p>Teaching correct production of the SH sound in all word positions.</p>`
+        title: "/ʃ/ (\"sh\") Sound",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-sh-%CA%83-sound",
+        content: ``
     },
 
     tSound: {
@@ -287,17 +363,17 @@ const skillPagesContent = {
     },
 
     thSound: {
-        title: "TH Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.thSound,
-        content: `<p>Teaching correct production of the TH sound (voiced and voiceless) in all word positions.</p>`
+        title: "\"th\" Sound (Voiced and Voiceless)",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-th-%CE%B8-d-sound",
+        content: ``
     },
 
     vSound: {
         title: "/v/ Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.vSound,
-        content: `<p>Teaching correct production of the /v/ sound in all word positions.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-v-sound",
+        content: ``
     },
 
     wSound: {
@@ -316,9 +392,9 @@ const skillPagesContent = {
 
     zSound: {
         title: "/z/ Sound",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.zSound,
-        content: `<p>Teaching correct production of the /z/ sound in all word positions.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-z-sound",
+        content: ``
     },
 
     vowelSounds: {
@@ -329,69 +405,81 @@ const skillPagesContent = {
     },
 
     consonantBlends: {
-        title: "Consonant Blends/Clusters",
-        category: "Articulation",
-        externalLink: externalLinksMapping.speechSounds.articulation.consonantBlends,
-        content: `<p>Teaching correct production of consonant blends and clusters.</p>`
+        title: "Consonant Clusters (like /st/ and /tw/)",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-consonant-blendsclusters",
+        content: ``
     },
 
     // PHONOLOGY SKILLS
     finalConsonantDeletion: {
         title: "Final Consonant Deletion",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.finalConsonantDeletion,
-        content: `
-            <p>Addressing the phonological pattern of omitting final consonants in words.</p>
-            <h4>Treatment Approach:</h4>
-            <ul>
-                <li>Contrast words with and without final consonants</li>
-                <li>Use minimal pairs (bee/beet, bow/boat)</li>
-                <li>Practice in increasingly complex contexts</li>
-                <li>Focus on functional vocabulary</li>
-            </ul>
-        `
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-final-consonant-deletion",
+        content: ``
+    },
+
+    unstressedSyllableDeletion: {
+        title: "Unstressed Syllable Deletion",
+        category: "Speech Sounds", 
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-unstressed-syllable-deletion-multisyllabic-word-reduction",
+        content: ``
     },
 
     initialConsonantDeletion: {
         title: "Initial Consonant Deletion",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.initialConsonantDeletion,
-        content: `<p>Addressing the phonological pattern of omitting initial consonants in words.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-initial-consonant-deletion",
+        content: ``
     },
 
     fronting: {
         title: "Velar Fronting",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.velarFronting,
-        content: `<p>Addressing the pattern of replacing back sounds (k, g) with front sounds (t, d).</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-velar-fronting",
+        content: ``
     },
 
     backing: {
         title: "Backing",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.backing,
-        content: `<p>Addressing the pattern of replacing front sounds with back sounds.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-backing",
+        content: ``
     },
 
     stopping: {
         title: "Stopping of Fricatives",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.stoppingOfFricatives,
-        content: `<p>Addressing the pattern of replacing fricative sounds with stop sounds.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-stopping-of-fricatives",
+        content: ``
     },
 
     clusterReduction: {
         title: "Cluster Reduction",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.clusterReduction,
-        content: `<p>Addressing the simplification of consonant clusters.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-cluster-reduction",
+        content: ``
     },
 
     gliding: {
         title: "Gliding of Liquids",
-        category: "Phonology",
-        externalLink: externalLinksMapping.speechSounds.phonology.glidingOfLiquids,
-        content: `<p>Addressing the pattern of replacing /l/ and /r/ with glide sounds.</p>`
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-gliding-of-liquids-l-and-r",
+        content: ``
+    },
+
+    prevocalicVoicing: {
+        title: "Prevocalic Voicing",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-prevocalic-voicing",
+        content: ``
+    },
+
+    postvocalicDevoicing: {
+        title: "Postvocalic Devoicing",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-postvocalic-devoicing",
+        content: ``
     },
 
     cyclesApproach: {
@@ -403,11 +491,10 @@ const skillPagesContent = {
 
     // LANGUAGE SKILLS - ABSTRACT LANGUAGE
     idioms: {
-        title: "Idioms and Figurative Language",
+        title: "Idioms and Figures of Speech",
         category: "Abstract Language",
-        externalLink: externalLinksMapping.languageSkills.abstractLanguage.idiomsAndFigurativeLanguage,
-        content: `
-            <p>Understanding and using non-literal language expressions.</p>
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-idioms-and-figurative-language",
+        content: ``
             <h4>Common Idioms to Teach:</h4>
             <ul>
                 <li>"It's raining cats and dogs" (raining heavily)</li>
@@ -421,108 +508,251 @@ const skillPagesContent = {
     similesMetaphors: {
         title: "Similes and Metaphors",
         category: "Abstract Language",
-        externalLink: externalLinksMapping.languageSkills.abstractLanguage.similesAndMetaphors,
-        content: `<p>Understanding and creating comparisons using similes and metaphors.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-similes-and-metaphors",
+        content: ``
     },
 
     inferences: {
-        title: "Making Inferences",
+        title: "Inferencing in Text and Social Inferencing",
         category: "Abstract Language",
-        externalLink: externalLinksMapping.languageSkills.abstractLanguage.makingInferences,
-        content: `<p>Drawing conclusions from context clues and implied information.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-making-inferences",
+        content: ``
     },
 
     // QUESTIONS SKILLS
     askingQuestions: {
-        title: "Asking Questions with Proper Syntax",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.askingQuestionsWithProperSyntax,
-        content: `<p>Learning to formulate grammatically correct questions.</p>`
+        title: "Asking Questions with Correct Syntax",
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-asking-questions-with-proper-syntax",
+        content: ``
     },
 
     whatQuestions: {
         title: "Answering What Questions",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringWhatQuestions,
-        content: `<p>Understanding and responding to "what" questions about objects and actions.</p>`
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-what-questions",
+        content: ``
     },
 
     whoQuestions: {
         title: "Answering Who Questions",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringWhoQuestions,
-        content: `<p>Understanding and responding to "who" questions about people.</p>`
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-who-questions",
+        content: ``
     },
 
     whereQuestions: {
         title: "Answering Where Questions",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringWhereQuestions,
-        content: `<p>Understanding and responding to "where" questions about locations.</p>`
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-where-questions-42457446",
+        content: ``
     },
 
     whenQuestions: {
         title: "Answering When Questions",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringWhenQuestions,
-        content: `<p>Understanding and responding to "when" questions about time.</p>`
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-when-questions",
+        content: ``
     },
 
     whyQuestions: {
         title: "Answering Why Questions",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringWhyQuestions,
-        content: `<p>Understanding and responding to "why" questions about reasons and causes.</p>`
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-why-questions",
+        content: ``
     },
 
     howQuestions: {
         title: "Answering How Questions",
-        category: "Questions",
-        externalLink: externalLinksMapping.languageSkills.askingAnsweringQuestions.answeringHowQuestions,
-        content: `<p>Understanding and responding to "how" questions about manner and process.</p>`
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-how-questions",
+        content: ``
+    },
+
+    whichQuestions: {
+        title: "Answering Which Questions",
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-which-questions",
+        content: ``
+    },
+
+    mixedQuestions: {
+        title: "Answering Mixed Questions",
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-mixed-questions",
+        content: ``
+    },
+
+    pastEventsQuestions: {
+        title: "Answering Questions about Past Events",
+        category: "Asking & Answering Questions",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-answering-questions-about-past-events",
+        content: ``
     },
 
     // GRAMMAR SKILLS
     articles: {
         title: "Articles (a, an, the)",
-        category: "Grammar",
-        externalLink: externalLinksMapping.languageSkills.grammarSyntax.articles,
-        content: `<p>Using articles correctly in sentences.</p>`
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-articles-a-an-the",
+        content: ``
+    },
+
+    presentProgressive: {
+        title: "Present progressive (-ing verbs)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     },
 
     pronouns: {
-        title: "Pronouns",
-        category: "Grammar",
-        externalLink: externalLinksMapping.languageSkills.grammarSyntax.pronouns,
-        content: `<p>Using personal pronouns (he, she, they, it) correctly.</p>`
+        title: "Pronouns (he, she, they, it, we, etc.)",
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-pronouns-he-she-they",
+        content: ``
     },
 
     plurals: {
-        title: "Plural Nouns",
-        category: "Grammar",
-        externalLink: externalLinksMapping.languageSkills.grammarSyntax.pluralNouns,
-        content: `<p>Forming and using regular and irregular plurals.</p>`
+        title: "Plurals (regular and irregular)",
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-plural-nouns",
+        content: ``
     },
 
     pastTense: {
-        title: "Past Tense Verbs",
-        category: "Grammar",
-        externalLink: externalLinksMapping.languageSkills.grammarSyntax.pastTenseVerbs,
-        content: `<p>Using past tense verbs correctly in sentences.</p>`
+        title: "Past tense (-ed endings, irregular verbs)",
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-past-tense-verbs",
+        content: ``
     },
 
     possessives: {
-        title: "Possessive Forms",
-        category: "Grammar",
-        externalLink: externalLinksMapping.languageSkills.grammarSyntax.possessiveS,
-        content: `<p>Using possessive 's and possessive pronouns correctly.</p>`
+        title: "Possessive forms ('s)",
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-possessive-s-ex-sallys-ball",
+        content: ``
+    },
+
+    simpleConjunctions: {
+        title: "Simple conjunctions (and, but, because)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    // GRAMMAR & SYNTAX - MISSING PAGES 135-139
+    basicSentenceStructure: {
+        title: "Basic Sentence Structure: Subject + Verb + Object",
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-subject-verb-object-svo-sentences",
+        content: ``
+    },
+
+    compoundSentences: {
+        title: "Compound sentences (coordinating conjunctions: and, but, or, so, yet)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    complexSentences: {
+        title: "Complex sentences (subordinating conjunctions: because, although, unless, while, after)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    verbTenseSubject: {
+        title: "Matching verb tense to subject (e.g., He runs vs. They run)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    comparativeSuperlative: {
+        title: "Comparative and superlative adjectives (bigger, biggest)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    // GRAMMAR & SYNTAX - MISSING PAGES 140-144
+    pronounAntecedent: {
+        title: "Pronoun-antecedent agreement (e.g., \"Each child must bring their book.\")",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    prepositionalPhrases: {
+        title: "Using prepositional phrases for descriptive detail (\"The cat sat under the table.\")",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    modalVerbs: {
+        title: "Using modal verbs for polite requests or hypotheticals (can, could, should, would, might)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    sentenceFragments: {
+        title: "Correcting sentence fragments and run-on sentences",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    expandingSentences: {
+        title: "Expanding, combining, or reducing sentences for meaning, style, and emphasis",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    // GRAMMAR & SYNTAX - MISSING PAGES 145-149
+    activePassiveVoice: {
+        title: "Differentiating between active and passive voice",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    relativeClauses: {
+        title: "Using relative clauses (\"The boy who won the race is my friend.\")",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    conditionalSentences: {
+        title: "Mastering conditional sentences (\"If I had studied, I would have passed.\")",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    parallelStructure: {
+        title: "Parallel sentence structure (\"She likes to swim, to bike, and to run.\")",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    advancedTransitions: {
+        title: "Using advanced transition words (therefore, however, consequently, in contrast)",
+        category: "Grammar & Syntax",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     },
 
     auxiliaryVerbs: {
-        title: "Auxiliary Verbs",
-        category: "Grammar",
-        externalLink: externalLinksMapping.languageSkills.grammarSyntax.auxiliaryVerbs,
-        content: `<p>Using helping verbs (is, am, are, was, were, has, have) correctly.</p>`
+        title: "Auxiliary verbs (is, am, are, was, were, has, have)",
+        category: "Grammar & Syntax",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-auxiliary-verbs-helping-verbs-like-be-do-have-etc",
+        content: ``
     },
 
     // VOCABULARY SKILLS
@@ -536,73 +766,109 @@ const skillPagesContent = {
     spatialConcepts: {
         title: "Spatial Concepts",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.spatialConcepts,
-        content: `<p>Understanding location words like on, under, behind, between.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-spatial-concepts",
+        content: ``
     },
 
     temporalConcepts: {
         title: "Temporal Concepts",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.temporalConcepts,
-        content: `<p>Understanding time concepts like before, after, during, first, last.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-temporal-concepts-ex-beforeduringafter-etc",
+        content: ``
     },
 
     quantitativeConcepts: {
         title: "Quantitative Concepts",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.quantitativeConcepts,
-        content: `<p>Understanding quantity words like more, less, few, many, some.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-quantitative-concepts-ex-morelessa-few-etc",
+        content: ``
     },
 
     adjectives: {
         title: "Adjectives",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.adjectives,
-        content: `<p>Using descriptive words to modify nouns.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-adjectives",
+        content: ``
+    },
+
+    expandingVocabulary: {
+        title: "Expanding Vocabulary of Nouns from Basic Categories",
+        category: "Vocabulary",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-expanding-vocabulary-of-nouns-from-basic-categories",
+        content: ``
     },
 
     comparingContrasting: {
         title: "Comparing and Contrasting",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.comparingAndContrasting,
-        content: `<p>Identifying similarities and differences between items.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-comparing-and-contrasting",
+        content: ``
     },
 
     synonymsAntonyms: {
-        title: "Synonyms and Antonyms",
+        title: "Understand and Use Antonyms and Synonyms",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.antonymsAndSynonyms,
-        content: `<p>Understanding words with similar and opposite meanings.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-teaching-antonyms-and-synonyms",
+        content: ``
     },
 
     multipleMeanings: {
-        title: "Multiple Meaning Words",
+        title: "Understand and Use Multiple Meaning Words",
         category: "Vocabulary",
-        externalLink: externalLinksMapping.languageSkills.vocabulary.multipleMeaningWords,
-        content: `<p>Understanding words that have more than one meaning.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-teaching-multiple-meaning-words",
+        content: ``
     },
 
     // SEQUENCING AND RETELLING
     sequencing: {
-        title: "Sequencing Steps",
+        title: "Sequencing and Describing Steps to Common Activities",
         category: "Sequencing",
-        externalLink: externalLinksMapping.languageSkills.sequencingRetelling.sequencingAndDescribingSteps,
-        content: `<p>Ordering and describing steps in common activities.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-sequencing-and-describing-steps-to-common-activities",
+        content: ``
     },
 
     retellingEvents: {
-        title: "Retelling Past Events",
+        title: "Sequencing and Retelling Past Events",
         category: "Sequencing",
-        externalLink: externalLinksMapping.languageSkills.sequencingRetelling.retellingPastEvents,
-        content: `<p>Retelling personal experiences and stories in logical order.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-retelling-past-events",
+        content: ``
     },
 
     // LITERACY SKILLS
     phonologicalAwareness: {
         title: "Phonological Awareness",
-        category: "Literacy",
-        externalLink: externalLinksMapping.languageSkills.literacy.phonologicalAwareness,
-        content: `<p>Pre-reading skills including rhyming, syllable segmentation, and sound blending.</p>`
+        category: "Literacy Foundations",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-phonological-awareness-pre-reading-skills",
+        content: ``
+    },
+
+    // LITERACY FOUNDATIONS - MISSING PAGES 155, 156, 158, 159
+    affixes: {
+        title: "Using Affixes (Prefixes and Suffixes) and Roots to Decode Unknown Words",
+        category: "Literacy Foundations",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-using-affixes-prefixes-suffixes-to-decode-unknown-words",
+        content: ``
+    },
+
+    wordAttackStrategies: {
+        title: "Other Word Attack and Word Learning Strategies as Appropriate",
+        category: "Literacy Foundations",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    printAwareness: {
+        title: "Print Awareness",
+        category: "Literacy Foundations",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    basicStoryStructure: {
+        title: "Basic Story Structure",
+        category: "Literacy Foundations",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     },
 
     readingComprehension: {
@@ -613,10 +879,17 @@ const skillPagesContent = {
     },
 
     narratives: {
-        title: "Understanding Narratives",
+        title: "Understanding, Retelling, and Producing Narratives",
         category: "Literacy",
-        externalLink: externalLinksMapping.languageSkills.literacy.understandingRetellingProducingNarratives,
-        content: `<p>Understanding, retelling, and producing story narratives.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-understanding-retelling-and-producing-narratives",
+        content: ``
+    },
+
+    literalNonliteral: {
+        title: "Identify Literal vs. Nonliteral Language",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     },
 
     // FLUENCY SKILLS
@@ -637,15 +910,15 @@ const skillPagesContent = {
     fluencyShaping: {
         title: "Fluency Shaping",
         category: "Fluency",
-        externalLink: externalLinksMapping.fluencySkills.fluencyShapingStrategies,
-        content: `<p>Techniques for smooth, fluent speech production.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-fluency-shapingenhancing-strategies",
+        content: ``
     },
 
     stutteringModification: {
         title: "Stuttering Modification",
         category: "Fluency",
-        externalLink: externalLinksMapping.fluencySkills.stutteringModificationStrategies,
-        content: `<p>Strategies for managing moments of stuttering.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-stuttering-modification-strategies",
+        content: ``
     },
 
     cluttering: {
@@ -680,8 +953,8 @@ const skillPagesContent = {
     perspectiveTaking: {
         title: "Perspective Taking",
         category: "Social Communication",
-        externalLink: externalLinksMapping.socialCommunication.awarenessOfOthers.perspectiveTakingEmpathy,
-        content: `<p>Understanding others' thoughts, feelings, and perspectives.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-perspective-taking-empathy-and-understanding-others",
+        content: ``
     },
 
     personalSpace: {
@@ -701,29 +974,29 @@ const skillPagesContent = {
     topicMaintenance: {
         title: "Topic Maintenance",
         category: "Social Communication",
-        externalLink: externalLinksMapping.socialCommunication.conversationalSkills.topicMaintenanceAndProvidingRelevantInfo,
-        content: `<p>Staying on topic and providing relevant information in conversation.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-topic-maintenance-and-providing-relevant-info",
+        content: ``
     },
 
     selfAdvocacy: {
-        title: "Self-Advocacy",
+        title: "Self-Advocacy and Speaking Up for What you Want/Need",
         category: "Social Communication",
-        externalLink: externalLinksMapping.socialCommunication.conversationalSkills.selfAdvocacy,
-        content: `<p>Speaking up for wants, needs, and rights.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-self-advocacy-and-speaking-up-for-what-you-wantneed",
+        content: ``
     },
 
     conversationMaintenance: {
-        title: "Maintaining Conversations",
-        category: "Social Communication",
-        externalLink: externalLinksMapping.socialCommunication.conversationalSkills.continuingMaintainingAnInteraction,
-        content: `<p>Keeping conversations going through questions and responses.</p>`
+        title: "Continuing/Maintaining an Interaction",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-continuingmaintaining-an-interaction-responding-asking-questions-etc",
+        content: ``
     },
 
     communicationRepair: {
-        title: "Communication Repair",
+        title: "Identifying Signs of Communication Breakdown and Using Repair Strategies",
         category: "Social Communication",
-        externalLink: externalLinksMapping.socialCommunication.conversationalSkills.repairingCommunicationBreakdowns,
-        content: `<p>Strategies for fixing communication breakdowns.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-repairing-communication-breakdowns",
+        content: ``
     },
 
     conflictResolution: {
@@ -748,10 +1021,10 @@ const skillPagesContent = {
     },
 
     sarcasm: {
-        title: "Understanding Sarcasm",
+        title: "Understanding Sarcasm and Irony",
         category: "Social Communication",
-        externalLink: externalLinksMapping.socialCommunication.abstractSocialCommunication.understandingAndUsingSarcasm,
-        content: `<p>Recognizing and appropriately using sarcastic language.</p>`
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     },
 
     selectiveMutism: {
@@ -806,26 +1079,499 @@ const skillPagesContent = {
 
     // MUMBLING/INTELLIGIBILITY
     mumbling: {
-        title: "Reducing Mumbling",
-        category: "Speech Clarity",
-        externalLink: externalLinksMapping.speechSounds.mumbling.improveIntelligibility,
-        content: `<p>Strategies to improve speech clarity and reduce mumbling.</p>`
+        title: "Overarticulation in Words, Phrases, and Sentences",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-improve-intelligibility-by-decreasing-mumbling",
+        content: ``
+    },
+
+    overarticulateConversation: {
+        title: "Overarticulate in Structured Conversation when Prompted",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-improve-intelligibility-by-decreasing-mumbling",
+        content: ``
     },
 
     // ORAL MOTOR
     oralMotor: {
-        title: "Oral Motor Coordination",
-        category: "Motor Speech",
-        externalLink: externalLinksMapping.speechSounds.oralMotor.improveOralProprioception,
-        content: `<p>Improving oral proprioception and coordination for speech.</p>`
+        title: "Improving Oral Proprioception and Coordination for Speech and Saliva Management",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-improving-oral-proprioception-and-coordination-for-speech",
+        content: ``
+    },
+
+    // SPEECH SOUNDS - MISSING PAGES 93 & 95
+    expandedWordStructures: {
+        title: "Produce Expanded Word Structures, such as CVCV, CCVC, etc.",
+        category: "Speech Sounds",
+        externalLink: null,
+        content: `<p>Coming soon!</p>`
+    },
+
+    multisyllabicWords: {
+        title: "Producing Multisyllabic Words",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-multi-syllabic-words",
+        content: ``
+    },
+
+    // ABSTRACT LANGUAGE - PAGES 160-164
+    identifyingMainIdea: {
+        title: "Identifying Main Idea and Detail",
+        category: "Abstract Language",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-skills-identify-main-idea-and-details",
+        content: ``
+    },
+
+    understandingRetellingInfo: {
+        title: "Understanding, Retelling, and Providing Information",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    understandingRetellingOpinions: {
+        title: "Understanding, Retelling, and Stating Opinions",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    makingPredictions: {
+        title: "Making Predictions",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    identifyingAuthorPurpose: {
+        title: "Identifying author's purpose and perspective",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    synthesizingInformation: {
+        title: "Synthesizing information from multiple sources",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    organizingExpressing: {
+        title: "Organizing and Expressing Ideas in Writing",
+        category: "Abstract Language",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    kindergartenLanguage: {
+        title: "Kindergarten (5-6 yrs) Language Cycles",
+        category: "Cycles Language",
+        externalLink: "https://hub.speechandlanguagekids.com/spaces/14065619",
+        content: ``
+    },
+
+    firstGradeLanguage: {
+        title: "1st Grade (6-7 yrs) Language Cycles",
+        category: "Cycles Language",
+        externalLink: "https://hub.speechandlanguagekids.com/spaces/14065690",
+        content: ``
+    },
+
+    secondGradeLanguage: {
+        title: "2nd Grade (7-8 yrs) Language Cycles",
+        category: "Cycles Language",
+        externalLink: "https://hub.speechandlanguagekids.com/spaces/14094105",
+        content: ``
+    },
+
+    thirdGradeLanguage: {
+        title: "3rd Grade (8-9 yrs) Language Cycles",
+        category: "Cycles Language",
+        externalLink: "https://hub.speechandlanguagekids.com/spaces/14094109",
+        content: ``
+    },
+
+    fourthGradeLanguage: {
+        title: "4th Grade (9-10 yrs) Language Cycles",
+        category: "Cycles Language",
+        externalLink: "https://hub.speechandlanguagekids.com/spaces/14094112",
+        content: ``
+    },
+
+    fifthGradeLanguage: {
+        title: "5th Grade (10-11+ yrs) Language Cycles",
+        category: "Cycles Language",
+        externalLink: "https://hub.speechandlanguagekids.com/spaces/14094113",
+        content: ``
+    },
+
+    eliminatingVocalAbuse: {
+        title: "Eliminating Vocal Abuse",
+        category: "Healthy Voice",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-vocal-hygieneeliminating-vocal-abuse",
+        content: ``
+    },
+
+    coordinatingBreath: {
+        title: "Coordinating Breath with Speech",
+        category: "Healthy Voice",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-improving-breath-control-for-fluency",
+        content: ``
+    },
+
+    improvingVocalQuality: {
+        title: "Improving vocal quality",
+        category: "Voice",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-vocal-qualityimproving-vocal-quality",
+        content: ``
+    },
+
+    establishingVocalVolume: {
+        title: "Establishing Appropriate Vocal Volume",
+        category: "Voice",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-vocal-volumeestablishing-appropriate-vocal-volume",
+        content: ``
+    },
+
+    establishingIntonation: {
+        title: "Establishing Natural Intonation/Prosody",
+        category: "Prosody",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/prosody-establish-natural-intonationprosody",
+        content: ``
+    },
+
+    establishingRate: {
+        title: "Establishing Natural Rate/Rhythm",
+        category: "Prosody",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/prosody-establish-natural-raterhythm",
+        content: ``
+    },
+
+    establishingPhrasing: {
+        title: "Establishing Natural Phrasing and Pausing",
+        category: "Prosody",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/prosody-establish-natural-phrasing-and-pausing",
+        content: ``
+    },
+
+    selfMonitoringVoice: {
+        title: "Self-Monitoring and Carrying Over Voice Strategies to Everyday Situations",
+        category: "Voice",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
+    },
+
+    discriminatingResonance: {
+        title: "Discriminating Between Oral vs. Hypernasal Resonance",
+        category: "Resonance",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-hypernasalitynasal-emission",
+        content: ``
+    },
+
+    usingOralResonance: {
+        title: "Using Oral Resonance in Structured Speech Tasks",
+        category: "Resonance",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-hypernasalitynasal-emission",
+        content: ``
+    },
+
+    generalizingOralResonance: {
+        title: "Generalizing Oral Resonance to All Environments",
+        category: "Resonance",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-hypernasalitynasal-emission",
+        content: ``
+    },
+
+    demonstratingProsody: {
+        title: "Demonstrating Prosody Variations in Sounds and Speech",
+        category: "Prosody",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-prosody-pitch-volume-rate",
+        content: ``
+    },
+
+    usingExpectedProsody: {
+        title: "Using Expected Prosody in Phrases and Sentences",
+        category: "Prosody",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-prosody-pitch-volume-rate",
+        content: ``
+    },
+
+    generalizingExpectedProsody: {
+        title: "Generalizing Expected Prosody to All Environments",
+        category: "Prosody",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/voiceresonance-prosody-pitch-volume-rate",
+        content: ``
+    },
+
+    understandingProximity: {
+        title: "Understanding Proximity and Personal Space",
+        category: "Social Awareness",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-proximity-giving-others-personal-space",
+        content: ``
+    },
+
+    topicMaintenanceRelevant: {
+        title: "Topic Maintenance and Providing Relevant Information",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-topic-maintenance-and-providing-relevant-info",
+        content: ``
+    },
+
+    perspectiveTakingEmpathy: {
+        title: "Perspective-Taking, Empathy, and Understanding Others",
+        category: "Social Awareness",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-perspective-taking-empathy-and-understanding-others",
+        content: ``
+    },
+
+    emotionalRegulationSelfCalming: {
+        title: "Emotional regulation and self-calming",
+        category: "Emotional Regulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-emotional-regulation-and-self-calming",
+        content: ``
+    },
+
+    nonverbalCommunication: {
+        title: "Nonverbal Communication (Understanding and Using)",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-non-verbal-communication-understanding-and-using",
+        content: ``
+    },
+
+    jokesTeasingIrony: {
+        title: "Jokes, Teasing, Irony, Metaphors, Sarcasm",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-jokes-teasing-irony-metaphors-sarcasm",
+        content: ``
+    },
+
+    conflictResolution: {
+        title: "Conflict Resolution and Problem Solving",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-conflict-resolution-and-problem-solving",
+        content: ``
+    },
+
+    communicationBreakdowns: {
+        title: "Managing Communication Breakdowns and Misunderstandings",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-managing-communication-breakdowns-and-misunderstandings",
+        content: ``
+    },
+
+    replacingChallengingBehaviors: {
+        title: "Replacing Challenging Behaviors with Communication",
+        category: "Emotional Regulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-replacing-challenging-behaviors-with-communication",
+        content: ``
+    },
+
+    regulatingEmotionsCalming: {
+        title: "Regulating Emotions and Self Calming",
+        category: "Emotional Regulation",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-regulating-emotions-and-self-calming",
+        content: ``
+    },
+
+    respondingToOthers: {
+        title: "Responding to Others",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-continuingmaintaining-an-interaction-responding-asking-questions-etc",
+        content: ``
+    },
+
+    navigatingDisagreements: {
+        title: "Navigating Disagreements with Others",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-navigating-disagreements-with-others",
+        content: ``
+    },
+
+    pragmaticSkillsConversation: {
+        title: "Pragmatic Skills for Conversation",
+        category: "Selective Mutism",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/selective-mutism-pragmatic-skills-for-conversation",
+        content: ``
+    },
+
+    selectiveMutismSupport: {
+        title: "Selective Mutism Support Techniques",
+        category: "Selective Mutism", 
+        externalLink: "https://hub.speechandlanguagekids.com/posts/selective-mutism-parent-techniques-to-support-a-child-with-selective-mutism",
+        content: ``
+    },
+
+    fluentPhraseProduction: {
+        title: "Fluent Phrase Production",
+        category: "Foundations of Fluency",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-fluent-phrase-production",
+        content: ``
+    },
+
+    fluentSentenceProduction: {
+        title: "Fluent Sentence Production",
+        category: "Foundations of Fluency",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-fluent-sentence-production",
+        content: ``
+    },
+
+    fluentConversationSkills: {
+        title: "Fluent Conversation Skills",
+        category: "Foundations of Fluency",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-fluent-conversation-skills",
+        content: ``
+    },
+
+    codeSwitching: {
+        title: "Code Switching",
+        category: "Conversational Skills",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-code-switching",
+        content: ``
+    },
+
+    environmentalModifications: {
+        title: "Providing Environmental Modifications to Promote Communication for Individuals with Anxiety-Based Communication Challenges",
+        category: "Selective Mutism",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-increasing-speech-for-children-with-selective-mutism",
+        content: ``
+    },
+
+    identifyingMotivation: {
+        title: "Identifying Motivation for Speech and Calming Strategies for Individuals with Anxiety-Based Communication Challenges",
+        category: "Selective Mutism",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-increasing-speech-for-children-with-selective-mutism",
+        content: ``
+    },
+
+    increasingSpeechGradual: {
+        title: "Increasing Speech with Gradual Expansion of Communication Situations for Individuals with Anxiety-Based Communication Challenges",
+        category: "Selective Mutism",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-increasing-speech-for-children-with-selective-mutism",
+        content: ``
+    },
+
+    improvingSelfAwareness: {
+        title: "Improving Self-Awareness of Stuttering",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-improving-awareness-and-dealing-with-negative-emotions-for-stuttering",
+        content: ``
+    },
+
+    dealingWithNegativeEmotions: {
+        title: "Dealing with Negative Emotions Regarding Stuttering",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-improving-awareness-and-dealing-with-negative-emotions-for-stuttering",
+        content: ``
+    },
+
+    integratingFluencyStrategies: {
+        title: "Integrating fluency strategies in real-world communication",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/generalizing-skills-to-conversation-generalizing-skills-to-conversation-carry-over",
+        content: ``
+    },
+
+    semanticWordAssociation: {
+        title: "Semantic Word Association Activities",
+        category: "Word Finding",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-word-findingword-retrieval",
+        content: ``
+    },
+
+    phonologicalWordAssociation: {
+        title: "Phonological Word Association Activities",
+        category: "Word Finding",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-word-findingword-retrieval",
+        content: ``
+    },
+
+    conversationalWordFinding: {
+        title: "Conversational Word-Finding Strategies",
+        category: "Word Finding",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-word-findingword-retrieval",
+        content: ``
+    },
+
+    improveFluencyIndirect: {
+        title: "Improve Fluency through Indirect Strategies and Parent Training",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-indirect-therapy-for-young-children-who-stutter",
+        content: ``
+    },
+
+    teachingFastSlow: {
+        title: "Teaching Fast/Slow and Bumpy/Smooth",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-indirect-therapy-for-young-children-who-stutter",
+        content: ``
+    },
+
+    fluencyShapingTechniques: {
+        title: "Fluency Shaping Techniques",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-fluency-shapingenhancing-strategies",
+        content: ``
+    },
+
+    stutteringModificationTechniques: {
+        title: "Stuttering Modification Techniques",
+        category: "Stuttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-stuttering-modification-strategies",
+        content: ``
+    },
+
+    usingSlowClearSpeech: {
+        title: "Using Slow and Clear Speech in Structured Speech Tasks (for Cluttering)",
+        category: "Cluttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-improving-fluency-and-speech-clarity-for-cluttering",
+        content: ``
+    },
+
+    usingSlowClearPractice: {
+        title: "Using Slow, Clear Speech During Practice Scenarios (for Cluttering)",
+        category: "Cluttering",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/fluency-skills-improving-fluency-and-speech-clarity-for-cluttering",
+        content: ``
     },
 
     // GENERALIZATION
     generalization: {
         title: "Generalizing Skills to Conversation",
         category: "Generalization",
-        externalLink: externalLinksMapping.generalization.generalizingSkillsToConversation,
-        content: `<p>Strategies for carrying over learned skills to conversational speech.</p>`
+        externalLink: "https://hub.speechandlanguagekids.com/posts/language-therapy-conversation-skills",
+        content: ``
+    },
+
+    // SPEECH SOUNDS - MISSING PAGES 69-71
+    tSound: {
+        title: "/t/ Sound",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-t-sound",
+        content: ``
+    },
+
+    ngSound: {
+        title: "/ŋ/ \"ng\" Sound",
+        category: "Speech Sounds", 
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-ng-ng-sound",
+        content: ``
+    },
+
+    ySound: {
+        title: "\"y\" Sound",
+        category: "Speech Sounds",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/speech-sound-skills-y-j-sound",
+        content: ``
+    },
+
+    // SPEECH SOUNDS - MISSING PAGE 81 (COMING SOON)
+    zhSound: {
+        title: "/ʒ/ Sound (\"zh\" as in \"measure\")",
+        category: "Speech Sounds",
+        externalLink: null,
+        content: `<p>Coming Soon!</p>`
     }
 };
 
