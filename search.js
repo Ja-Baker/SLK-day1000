@@ -170,11 +170,70 @@ class SLKSearch {
         // Clear previous results
         this.resultsList.innerHTML = '';
         
-        // Add each result
-        this.currentResults.forEach((result, index) => {
-            const resultElement = this.createResultElement(result, index);
-            this.resultsList.appendChild(resultElement);
+        // Group results by type while maintaining order and relevance
+        const groupedResults = this.groupResultsByType(this.currentResults);
+        
+        // Display sections in order: Curriculums, Skills, Pages
+        const sectionOrder = ['Curriculum', 'Skill', 'Page'];
+        let globalIndex = 0;
+        
+        sectionOrder.forEach(sectionType => {
+            if (groupedResults[sectionType] && groupedResults[sectionType].length > 0) {
+                // Create section header
+                const sectionHeader = this.createSectionHeader(sectionType, groupedResults[sectionType].length);
+                this.resultsList.appendChild(sectionHeader);
+                
+                // Add results for this section
+                groupedResults[sectionType].forEach(result => {
+                    const resultElement = this.createResultElement(result, globalIndex);
+                    this.resultsList.appendChild(resultElement);
+                    globalIndex++;
+                });
+            }
         });
+    }
+    
+    groupResultsByType(results) {
+        const grouped = {
+            'Curriculum': [],
+            'Skill': [],
+            'Page': []
+        };
+        
+        results.forEach(result => {
+            if (grouped[result.type]) {
+                grouped[result.type].push(result);
+            }
+        });
+        
+        return grouped;
+    }
+    
+    createSectionHeader(type, count) {
+        const header = document.createElement('div');
+        header.className = 'search-section-header';
+        
+        const icon = this.getSectionIcon(type);
+        const pluralType = count === 1 ? type : (type === 'Curriculum' ? 'Curriculums' : type + 's');
+        
+        header.innerHTML = `
+            <div class="search-section-content">
+                <span class="search-section-icon">${icon}</span>
+                <span class="search-section-title">${pluralType}</span>
+                <span class="search-section-count">${count}</span>
+            </div>
+        `;
+        
+        return header;
+    }
+    
+    getSectionIcon(type) {
+        const icons = {
+            'Curriculum': '📚',
+            'Skill': '🎯',
+            'Page': '📄'
+        };
+        return icons[type] || '📋';
     }
     
     createResultElement(result, index) {
@@ -258,18 +317,23 @@ class SLKSearch {
     }
     
     updateSelection() {
-        // Remove previous selection
+        // Remove previous selection from all result items
         const previousSelected = this.resultsList.querySelector('.search-result-item.selected');
         if (previousSelected) {
             previousSelected.classList.remove('selected');
         }
         
-        // Add selection to current item
+        // Add selection to current item (skip section headers)
         if (this.selectedIndex >= 0) {
-            const currentSelected = this.resultsList.children[this.selectedIndex];
+            const resultItems = this.resultsList.querySelectorAll('.search-result-item');
+            const currentSelected = resultItems[this.selectedIndex];
             if (currentSelected) {
                 currentSelected.classList.add('selected');
-                currentSelected.scrollIntoView({ block: 'nearest' });
+                // Smooth scroll to selected item within dropdown
+                currentSelected.scrollIntoView({ 
+                    block: 'nearest',
+                    behavior: 'smooth'
+                });
             }
         }
     }
