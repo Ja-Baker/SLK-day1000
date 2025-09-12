@@ -8,6 +8,8 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="search-data.js" as="script">
+    <link rel="preload" href="search.js" as="script">
     <link rel="preload" href="external-links-mapping.js" as="script">
     
     <!-- DNS prefetch for external resources -->
@@ -21,8 +23,22 @@
         <!-- Navigation Header -->
         <header class="nav-header">
             <button class="back-btn" id="backBtn" style="display: none;">← Back</button>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search curriculums or skills...">
+                <button id="clearSearch" class="clear-search-btn" style="display: none;">×</button>
+            </div>
             <h1 class="site-title">SLK Curriculum Planning Tool</h1>
         </header>
+        
+        <!-- Search Results Dropdown -->
+        <div id="searchResults" class="search-results" style="display: none;">
+            <div class="search-results-header">
+                <span id="resultsCount">0 results found</span>
+            </div>
+            <div id="searchResultsList" class="search-results-list">
+                <!-- Results populated by JavaScript -->
+            </div>
+        </div>
 
         <!-- Main Content Area -->
         <main id="content">
@@ -3770,6 +3786,8 @@
 
     <!-- Critical scripts loaded immediately -->
     <script src="script.js"></script>
+    <script src="search-data.js"></script>
+    <script src="search.js"></script>
     <script src="external-links-mapping.js"></script>
     
     <!-- Non-critical scripts loaded asynchronously -->

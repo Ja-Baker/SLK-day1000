@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Read(//mnt/c/Users/insti/OneDrive/Documents/**)"
+      "Read(//mnt/c/Users/insti/OneDrive/Documents/**)",
+      "Read(//mnt/c/Users/insti/Downloads/**)",
+      "Bash(cd:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
