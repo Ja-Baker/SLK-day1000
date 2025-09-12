@@ -26,19 +26,19 @@
             <div class="search-wrapper">
                 <input type="text" id="searchInput" class="search-input" placeholder="Search curriculums or skills...">
                 <button id="clearSearch" class="clear-search-btn" style="display: none;">×</button>
+                
+                <!-- Search Results Dropdown - Inside search-wrapper for proper positioning -->
+                <div id="searchResults" class="search-results" style="display: none;">
+                    <div class="search-results-header">
+                        <span id="resultsCount">0 results found</span>
+                    </div>
+                    <div id="searchResultsList" class="search-results-list">
+                        <!-- Results populated by JavaScript -->
+                    </div>
+                </div>
             </div>
             <h1 class="site-title">SLK Curriculum Planning Tool</h1>
         </header>
-        
-        <!-- Search Results Dropdown -->
-        <div id="searchResults" class="search-results" style="display: none;">
-            <div class="search-results-header">
-                <span id="resultsCount">0 results found</span>
-            </div>
-            <div id="searchResultsList" class="search-results-list">
-                <!-- Results populated by JavaScript -->
-            </div>
-        </div>
 
         <!-- Main Content Area -->
         <main id="content">
