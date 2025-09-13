@@ -1,5 +1,5 @@
-// Complete Search data structure for SLK Curriculum Planning Tool
-// Includes ALL curriculum pages, ALL skill pages, and navigation pages
+// Search data structure for SLK Curriculum Planning Tool
+// Extracted from existing curriculum and skill pages
 
 const searchData = {
     // Main navigation pages
@@ -19,14 +19,6 @@ const searchData = {
             description: 'Interactive guide to find the right curriculum for an individual',
             keywords: ['decision', 'guide', 'help', 'choose', 'find', 'which', 'curriculum'],
             pageId: 'decisionGuide'
-        },
-        {
-            id: 'jumpToCurriculum',
-            title: 'Jump to Curriculum or Skill',
-            type: 'Page',
-            description: 'Quick access to browse curriculums and skills directly',
-            keywords: ['jump', 'curriculum', 'skill', 'browse', 'direct', 'access'],
-            pageId: 'jumpToCurriculum'
         },
         {
             id: 'curriculumList',
@@ -67,66 +59,10 @@ const searchData = {
             description: 'Download visual cues and aids for communication challenges',
             keywords: ['visuals', 'visual', 'supports', 'cues', 'aids', 'communication'],
             pageId: 'visuals'
-        },
-        {
-            id: 'needsFunctionalComm',
-            title: 'Needs Functional Communication',
-            type: 'Page',
-            description: 'Assessment and curriculum selection for individuals who need functional communication',
-            keywords: ['functional', 'communication', 'needs', 'assessment'],
-            pageId: 'needsFunctionalComm'
-        },
-        {
-            id: 'noFunctionalComm',
-            title: 'Has Functional Communication',
-            type: 'Page',
-            description: 'Assessment and curriculum selection for individuals with functional communication',
-            keywords: ['functional', 'communication', 'has', 'assessment'],
-            pageId: 'noFunctionalComm'
-        },
-        {
-            id: 'speechSounds',
-            title: 'Speech Sounds Area',
-            type: 'Page',
-            description: 'Speech sound production and articulation curriculums',
-            keywords: ['speech', 'sounds', 'articulation', 'production'],
-            pageId: 'speechSounds'
-        },
-        {
-            id: 'language',
-            title: 'Language Area',
-            type: 'Page',
-            description: 'Language comprehension and expression curriculums',
-            keywords: ['language', 'comprehension', 'expression'],
-            pageId: 'language'
-        },
-        {
-            id: 'voiceResonance',
-            title: 'Voice and Resonance Area',
-            type: 'Page',
-            description: 'Voice quality and resonance curriculums',
-            keywords: ['voice', 'resonance', 'quality', 'vocal'],
-            pageId: 'voiceResonance'
-        },
-        {
-            id: 'socialCommunication',
-            title: 'Social Communication Area',
-            type: 'Page',
-            description: 'Social interaction and communication skills curriculums',
-            keywords: ['social', 'communication', 'interaction', 'skills'],
-            pageId: 'socialCommunication'
-        },
-        {
-            id: 'fluency',
-            title: 'Fluency Area',
-            type: 'Page',
-            description: 'Fluency disorders and stuttering curriculums',
-            keywords: ['fluency', 'stuttering', 'disorders'],
-            pageId: 'fluency'
         }
     ],
 
-    // ALL Curriculum pages from HTML
+    // Curriculum pages extracted from HTML
     curriculums: [
         {
             id: 'earlyInteractions',
@@ -162,14 +98,6 @@ const searchData = {
             pageId: 'aacCurriculum'
         },
         {
-            id: 'cyclesPhonology',
-            title: 'Cycles Approach to Speech Sounds',
-            type: 'Curriculum',
-            description: 'Systematic approach to treating multiple phonological patterns',
-            keywords: ['cycles', 'approach', 'speech', 'sounds', 'phonological', 'systematic', 'multiple', 'patterns'],
-            pageId: 'cyclesPhonology'
-        },
-        {
             id: 'articulation',
             title: 'Articulation Curriculum',
             type: 'Curriculum',
@@ -184,6 +112,14 @@ const searchData = {
             description: 'Address phonological patterns and sound system organization',
             keywords: ['phonology', 'phonological', 'patterns', 'sound', 'system', 'processes'],
             pageId: 'phonology'
+        },
+        {
+            id: 'cyclesApproach',
+            title: 'Cycles Approach to Speech Sounds',
+            type: 'Curriculum',
+            description: 'Systematic approach to treating multiple phonological patterns',
+            keywords: ['cycles', 'approach', 'speech', 'sounds', 'phonological', 'systematic', 'multiple', 'patterns'],
+            pageId: 'cyclesApproach'
         },
         {
             id: 'motorSpeech',
@@ -210,12 +146,12 @@ const searchData = {
             pageId: 'followingDirections'
         },
         {
-            id: 'askingAnswering',
+            id: 'askingAnsweringQuestions',
             title: 'Asking and Answering Questions Curriculum',
             type: 'Curriculum',
             description: 'Develop questioning skills and appropriate responses',
             keywords: ['asking', 'answering', 'questions', 'wh', 'who', 'what', 'where', 'when', 'why', 'how'],
-            pageId: 'askingAnswering'
+            pageId: 'askingAnsweringQuestions'
         },
         {
             id: 'sequencing',
@@ -234,14 +170,6 @@ const searchData = {
             pageId: 'abstractLanguage'
         },
         {
-            id: 'abstractLanguageSocial',
-            title: 'Abstract Language for Social Communication',
-            type: 'Curriculum',
-            description: 'Apply abstract language skills in social communication contexts',
-            keywords: ['abstract', 'language', 'social', 'communication', 'figurative', 'pragmatics'],
-            pageId: 'abstractLanguageSocial'
-        },
-        {
             id: 'grammarSyntax',
             title: 'Grammar/Syntax Curriculum',
             type: 'Curriculum',
@@ -258,12 +186,12 @@ const searchData = {
             pageId: 'vocabulary'
         },
         {
-            id: 'literacyFoundations',
+            id: 'languageFoundationsLiteracy',
             title: 'Language Foundations for Literacy Curriculum',
             type: 'Curriculum',
             description: 'Build language skills that support reading and writing development',
             keywords: ['language', 'foundations', 'literacy', 'reading', 'writing', 'phonemic', 'awareness'],
-            pageId: 'literacyFoundations'
+            pageId: 'languageFoundationsLiteracy'
         },
         {
             id: 'cyclesLanguage',
@@ -274,12 +202,12 @@ const searchData = {
             pageId: 'cyclesLanguage'
         },
         {
-            id: 'healthyVoice',
+            id: 'voiceFoundations',
             title: 'Foundations for Healthy Voice Use Curriculum',
             type: 'Curriculum',
             description: 'Establish healthy voice habits and prevent vocal trauma',
             keywords: ['voice', 'foundations', 'healthy', 'habits', 'vocal', 'hygiene'],
-            pageId: 'healthyVoice'
+            pageId: 'voiceFoundations'
         },
         {
             id: 'voice',
@@ -338,12 +266,12 @@ const searchData = {
             pageId: 'selectiveMutism'
         },
         {
-            id: 'foundationsFluency',
+            id: 'fluencyFoundations',
             title: 'Foundations for Fluency Curriculum',
             type: 'Curriculum',
             description: 'Build foundational skills for fluent speech production',
             keywords: ['fluency', 'foundations', 'smooth', 'speech', 'flow'],
-            pageId: 'foundationsFluency'
+            pageId: 'fluencyFoundations'
         },
         {
             id: 'wordFinding',
@@ -371,31 +299,100 @@ const searchData = {
         }
     ],
 
-    // ALL Skills from skill-pages-complete.js (sample - will be generated programmatically)
-    skills: []
-};
-
-// Generate all skills from the skillPagesContent object
-if (typeof skillPagesContent !== 'undefined') {
-    for (const [skillId, skillData] of Object.entries(skillPagesContent)) {
-        if (skillData.title && skillData.category) {
-            // Extract keywords from title and category
-            const titleWords = skillData.title.toLowerCase().split(/[^a-z0-9]+/).filter(word => word.length > 2);
-            const categoryWords = skillData.category.toLowerCase().split(/[^a-z0-9]+/).filter(word => word.length > 2);
-            
-            searchData.skills.push({
-                id: skillId,
-                title: skillData.title,
-                type: 'Skill',
-                description: skillData.content?.replace(/<[^>]*>/g, '').substring(0, 100) || `${skillData.title} - Part of ${skillData.category} skills`,
-                keywords: [...new Set([...titleWords, ...categoryWords])],
-                pageId: skillId,
-                category: skillData.category,
-                externalLink: skillData.externalLink
-            });
+    // Key skills extracted from skill-pages-complete.js
+    skills: [
+        {
+            id: 'respondingToName',
+            title: 'Responding to Name',
+            type: 'Skill',
+            description: 'Help individuals learn to respond when their name is called',
+            keywords: ['responding', 'name', 'attention', 'social', 'awareness'],
+            pageId: 'respondingToName',
+            category: 'Early Interactions'
+        },
+        {
+            id: 'jointAttentionTurnTaking',
+            title: 'Joint Attention and Turn Taking',
+            type: 'Skill',
+            description: 'Develop shared focus and turn-taking in interactions',
+            keywords: ['joint', 'attention', 'turn', 'taking', 'shared', 'focus'],
+            pageId: 'jointAttentionTurnTaking',
+            category: 'Early Interactions'
+        },
+        {
+            id: 'followingBasicDirections',
+            title: 'Following One-Step Directions (Routine and Novel)',
+            type: 'Skill',
+            description: 'Build ability to understand and follow simple instructions',
+            keywords: ['following', 'directions', 'one', 'step', 'instructions', 'commands'],
+            pageId: 'followingBasicDirections',
+            category: 'Following Directions'
+        },
+        {
+            id: 'followingTwoStepDirections',
+            title: 'Following 2-Step Directions (Routine and Novel)',
+            type: 'Skill',
+            description: 'Build ability to follow multi-step instructions',
+            keywords: ['following', 'directions', 'two', 'step', 'multi', 'instructions'],
+            pageId: 'followingTwoStepDirections',
+            category: 'Following Directions'
+        },
+        {
+            id: 'producingCVCWords',
+            title: 'Producing CV, VC, and CVC Words for Functional Communication',
+            type: 'Skill',
+            description: 'Improve production of simple word structures',
+            keywords: ['producing', 'words', 'cv', 'vc', 'cvc', 'functional', 'communication'],
+            pageId: 'producingCVCWords',
+            category: 'Functional Communication'
+        },
+        {
+            id: 'buildingFirst50Words',
+            title: 'Building an Expressive Vocabulary of First 50 Words',
+            type: 'Skill',
+            description: 'Develop core vocabulary for early communication',
+            keywords: ['vocabulary', 'first', '50', 'words', 'expressive', 'core'],
+            pageId: 'buildingFirst50Words',
+            category: 'Functional Communication'
+        },
+        {
+            id: 'producing2WordUtterances',
+            title: 'Producing 2-Word Utterances',
+            type: 'Skill',
+            description: 'Combine words together for basic communication',
+            keywords: ['producing', '2', 'word', 'utterances', 'combining', 'words'],
+            pageId: 'producing2WordUtterances',
+            category: 'Functional Communication'
+        },
+        {
+            id: 'respondingToEarlyGestalts',
+            title: 'Responding to and Modeling Early Gestalts',
+            type: 'Skill',
+            description: 'Support gestalt language processing at early stages',
+            keywords: ['gestalts', 'gestalt', 'language', 'processing', 'modeling'],
+            pageId: 'respondingToEarlyGestalts',
+            category: 'Gestalt Language Processing'
+        },
+        {
+            id: 'breakingDownGestalts',
+            title: 'Breaking Down and Mixing and Matching Gestalts',
+            type: 'Skill',
+            description: 'Help break down language chunks into flexible communication',
+            keywords: ['breaking', 'down', 'gestalts', 'mixing', 'matching', 'flexible'],
+            pageId: 'breakingDownGestalts',
+            category: 'Gestalt Language Processing'
+        },
+        {
+            id: 'earlyFunctionalAAC',
+            title: 'Early Functional Communication Using AAC',
+            type: 'Skill',
+            description: 'Begin using augmentative communication for basic needs',
+            keywords: ['aac', 'early', 'functional', 'communication', 'augmentative', 'alternative'],
+            pageId: 'earlyFunctionalAAC',
+            category: 'AAC'
         }
-    }
-}
+    ]
+};
 
 // Combined search array for easy searching
 const allSearchData = [
