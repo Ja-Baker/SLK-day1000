@@ -339,11 +339,85 @@ class SLKSearch {
     }
     
     selectResult(result) {
-        // Use existing showPage function to navigate
-        if (typeof showPage === 'function' && result.pageId) {
-            showPage(result.pageId);
-            this.hideResults();
-            this.clearSearch();
+        console.log('Navigating to:', result.type, result.pageId, result.title);
+        
+        if (result.type === 'Skill') {
+            // Handle skill navigation - populate the dynamic skill page
+            this.showSkillPage(result);
+        } else {
+            // Handle curriculum and page navigation using existing showPage function
+            if (typeof showPage === 'function' && result.pageId) {
+                showPage(result.pageId);
+            }
+        }
+        
+        this.hideResults();
+        this.clearSearch();
+    }
+    
+    showSkillPage(skillData) {
+        // Get skill content from skillPagesContent if available
+        const skillContent = (typeof skillPagesContent !== 'undefined' && skillPagesContent[skillData.id]) 
+            ? skillPagesContent[skillData.id] 
+            : null;
+            
+        // Populate the skill page dynamically
+        const skillPageElement = document.getElementById('skillContent');
+        if (skillPageElement) {
+            let content = `
+                <div class="skill-header">
+                    <h2>${skillData.title}</h2>
+                    <div class="skill-meta">
+                        <span class="skill-category">${skillData.category}</span>
+                        <span class="skill-type-badge">Skill</span>
+                    </div>
+                </div>
+                
+                <div class="skill-description">
+                    <p>${skillData.description}</p>
+                </div>
+            `;
+            
+            // Add actual skill content if available
+            if (skillContent && skillContent.content) {
+                content += `
+                    <div class="skill-content">
+                        ${skillContent.content}
+                    </div>
+                `;
+            } else {
+                content += `
+                    <div class="skill-content">
+                        <p><em>Detailed content for this skill is being developed. This skill focuses on ${skillData.description}</em></p>
+                    </div>
+                `;
+            }
+            
+            // Add external link if available
+            if (skillContent && skillContent.externalLink) {
+                content += `
+                    <div class="skill-resources">
+                        <h3>External Resources</h3>
+                        <a href="${skillContent.externalLink}" target="_blank" class="external-link-btn">
+                            View Related Resources on SLK Hub
+                        </a>
+                    </div>
+                `;
+            }
+            
+            // Add back navigation
+            content += `
+                <div class="skill-navigation">
+                    <button class="back-to-search-btn" onclick="goBack()">← Back to Previous Page</button>
+                </div>
+            `;
+            
+            skillPageElement.innerHTML = content;
+        }
+        
+        // Navigate to the skill page
+        if (typeof showPage === 'function') {
+            showPage('skillPage');
         }
     }
     
