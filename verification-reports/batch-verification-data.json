@@ -1,0 +1,369 @@
+[
+  {
+    "pageNumber": 14,
+    "pageId": "earlyInteractions",
+    "title": "Early Interactions Curriculum",
+    "status": "minor_issues",
+    "issues": [
+      "Description text differs"
+    ],
+    "hasHTMLElement": true,
+    "titleMatch": true,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.465Z"
+  },
+  {
+    "pageNumber": 15,
+    "pageId": "analyticLanguage",
+    "title": "Analytic Language Processor Curriculum",
+    "status": "verified",
+    "issues": [],
+    "hasHTMLElement": true,
+    "titleMatch": true,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.475Z"
+  },
+  {
+    "pageNumber": 16,
+    "pageId": "gestaltLanguage",
+    "title": "Gestalt Language Processor Curriculum",
+    "status": "verified",
+    "issues": [],
+    "hasHTMLElement": true,
+    "titleMatch": true,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.476Z"
+  },
+  {
+    "pageNumber": 17,
+    "pageId": "aacCurriculum",
+    "title": "AAC Curriculum",
+    "status": "verified",
+    "issues": [],
+    "hasHTMLElement": true,
+    "titleMatch": true,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.476Z"
+  },
+  {
+    "pageNumber": 18,
+    "pageId": "cyclesSpeechSounds",
+    "title": "Cycles Approach to Speech Sounds Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"cyclesSpeechSounds\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.482Z"
+  },
+  {
+    "pageNumber": 19,
+    "pageId": "articulationCurriculum",
+    "title": "Articulation Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"articulationCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.482Z"
+  },
+  {
+    "pageNumber": 20,
+    "pageId": "phonologyCurriculum",
+    "title": "Phonology Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"phonologyCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.482Z"
+  },
+  {
+    "pageNumber": 21,
+    "pageId": "motorSpeechCurriculum",
+    "title": "Motor Speech Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"motorSpeechCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.483Z"
+  },
+  {
+    "pageNumber": 22,
+    "pageId": "mumblingCurriculum",
+    "title": "Mumbling Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"mumblingCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.483Z"
+  },
+  {
+    "pageNumber": 23,
+    "pageId": "followingDirections",
+    "title": "Following Directions Curriculum",
+    "status": "verified",
+    "issues": [],
+    "hasHTMLElement": true,
+    "titleMatch": true,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.483Z"
+  },
+  {
+    "pageNumber": 24,
+    "pageId": "askingAnsweringQuestions",
+    "title": "Asking and Answering Questions Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"askingAnsweringQuestions\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.484Z"
+  },
+  {
+    "pageNumber": 25,
+    "pageId": "cyclesLanguageCurriculum",
+    "title": "Cycles Approach to Language Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"cyclesLanguageCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.484Z"
+  },
+  {
+    "pageNumber": 26,
+    "pageId": "sequencingRetelling",
+    "title": "Sequencing & Retelling Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"sequencingRetelling\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.485Z"
+  },
+  {
+    "pageNumber": 27,
+    "pageId": "grammarSentence",
+    "title": "Grammar & Sentence Complexity Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"grammarSentence\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.485Z"
+  },
+  {
+    "pageNumber": 28,
+    "pageId": "foundationsLiteracy",
+    "title": "Foundations for Literacy Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"foundationsLiteracy\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.485Z"
+  },
+  {
+    "pageNumber": 29,
+    "pageId": "abstractLanguage",
+    "title": "Abstract Language Curriculum",
+    "status": "verified",
+    "issues": [],
+    "hasHTMLElement": true,
+    "titleMatch": true,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.485Z"
+  },
+  {
+    "pageNumber": 30,
+    "pageId": "narrativeLanguage",
+    "title": "Narrative Language Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"narrativeLanguage\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.488Z"
+  },
+  {
+    "pageNumber": 31,
+    "pageId": "pragmaticLanguage",
+    "title": "Pragmatic Language Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"pragmaticLanguage\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.488Z"
+  },
+  {
+    "pageNumber": 32,
+    "pageId": "executiveFunctioning",
+    "title": "Executive Functioning Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"executiveFunctioning\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.489Z"
+  },
+  {
+    "pageNumber": 33,
+    "pageId": "selfAdvocacy",
+    "title": "Self-Advocacy Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"selfAdvocacy\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.489Z"
+  },
+  {
+    "pageNumber": 34,
+    "pageId": "voiceResonance",
+    "title": "Voice and Resonance Curriculum",
+    "status": "needs_attention",
+    "issues": [
+      "Title mismatch: \"Let's Work on Voice/Resonance\" vs \"Voice and Resonance Curriculum\""
+    ],
+    "hasHTMLElement": true,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.489Z"
+  },
+  {
+    "pageNumber": 35,
+    "pageId": "fluencyCurriculum",
+    "title": "Fluency Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"fluencyCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.490Z"
+  },
+  {
+    "pageNumber": 36,
+    "pageId": "feedingEating",
+    "title": "Feeding and Eating Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"feedingEating\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.490Z"
+  },
+  {
+    "pageNumber": 37,
+    "pageId": "oralMotorCurriculum",
+    "title": "Oral Motor Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"oralMotorCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.490Z"
+  },
+  {
+    "pageNumber": 38,
+    "pageId": "languageDisorder",
+    "title": "Language Disorder Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"languageDisorder\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.490Z"
+  },
+  {
+    "pageNumber": 39,
+    "pageId": "hearingImpairment",
+    "title": "Hearing Impairment Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"hearingImpairment\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.491Z"
+  },
+  {
+    "pageNumber": 40,
+    "pageId": "autismCurriculum",
+    "title": "Autism Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"autismCurriculum\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.491Z"
+  },
+  {
+    "pageNumber": 41,
+    "pageId": "downSyndrome",
+    "title": "Down Syndrome Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"downSyndrome\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.491Z"
+  },
+  {
+    "pageNumber": 42,
+    "pageId": "cerebralPalsy",
+    "title": "Cerebral Palsy Curriculum",
+    "status": "missing",
+    "issues": [
+      "Missing HTML element with id=\"cerebralPalsy\""
+    ],
+    "hasHTMLElement": false,
+    "titleMatch": false,
+    "descriptionMatch": false,
+    "timestamp": "2025-09-15T20:19:27.491Z"
+  }
+]

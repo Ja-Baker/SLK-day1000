@@ -1,0 +1,111 @@
+[
+  {
+    "context": "Page 14",
+    "field": "Title",
+    "type": "mismatch",
+    "expected": "Early Interactions Curriculum",
+    "actual": "SLK Curriculum Planning Tool",
+    "match": false
+  },
+  {
+    "context": "Page 14",
+    "field": "Description",
+    "type": "mismatch",
+    "expected": "This curriculum will encourage the individual  to engage, respond, and participate in social interactions.  Choose the level below that best fits this individual’s current level.  You don’t necessarily need to start at the first level if they have advanced beyond it.",
+    "actual": "This curriculum will encourage the individual  to engage, respond, and participate in social interactions.  Choose the level below that best fits this individual's current level.  You don't necessarily need to start at the first level if they have advanced beyond it.",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Beginner Level",
+    "field": "Title",
+    "type": "mismatch",
+    "expected": "Beginner Level: null",
+    "actual": "Beginner Level: Building Awareness and Engagement",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Beginner Level",
+    "field": "Age Range",
+    "type": "mismatch",
+    "expected": null,
+    "actual": "(Ages: 9-15 months and beyond)",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Beginner Level",
+    "field": "Skills",
+    "type": "mismatch",
+    "expected": [],
+    "actual": [
+      "Responding to Name",
+      "Joint Attention",
+      "Basic Turn Taking"
+    ],
+    "match": false
+  },
+  {
+    "context": "Page 14 - Intermediate Level",
+    "field": "Title",
+    "type": "mismatch",
+    "expected": "Intermediate Level: null",
+    "actual": "Beginner Level: Building Awareness and Engagement",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Intermediate Level",
+    "field": "Age Range",
+    "type": "mismatch",
+    "expected": null,
+    "actual": "(Ages: 9-15 months and beyond)",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Intermediate Level",
+    "field": "Skills",
+    "type": "mismatch",
+    "expected": [],
+    "actual": [
+      "Responding to Name",
+      "Joint Attention",
+      "Basic Turn Taking",
+      "Following Basic Directions",
+      "Answering Yes/No Questions",
+      "Making a Choice Between Two Options"
+    ],
+    "match": false
+  },
+  {
+    "context": "Page 14 - Advanced Level",
+    "field": "Title",
+    "type": "mismatch",
+    "expected": "Advanced Level: null",
+    "actual": "Beginner Level: Building Awareness and Engagement",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Advanced Level",
+    "field": "Age Range",
+    "type": "mismatch",
+    "expected": null,
+    "actual": "(Ages: 9-15 months and beyond)",
+    "match": false
+  },
+  {
+    "context": "Page 14 - Advanced Level",
+    "field": "Skills",
+    "type": "mismatch",
+    "expected": [],
+    "actual": [
+      "Responding to Name",
+      "Joint Attention",
+      "Basic Turn Taking",
+      "Following Basic Directions",
+      "Answering Yes/No Questions",
+      "Making a Choice Between Two Options",
+      "Participating in Early Social Routines",
+      "Increasing Interaction Length",
+      "Answering Wh- Questions"
+    ],
+    "match": false
+  }
+]

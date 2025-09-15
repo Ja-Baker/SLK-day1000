@@ -4,7 +4,10 @@
       "Read(//mnt/c/Users/insti/OneDrive/Documents/**)",
       "Read(//mnt/c/Users/insti/Downloads/**)",
       "Bash(cd:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(sort:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)"
     ],
     "deny": [],
     "ask": []
