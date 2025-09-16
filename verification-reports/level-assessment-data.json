@@ -1,0 +1,941 @@
+{
+  "totalLevels": 87,
+  "levelsChecked": 87,
+  "levelsWithContent": 60,
+  "levelsWithAIContent": 7,
+  "levelsMissingContent": 27,
+  "pagesAnalyzed": [
+    {
+      "page": 14,
+      "name": "Early Interactions",
+      "id": "earlyInteractions",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, the focus is on helping the child become more engaged in communication and interactio...",
+          "htmlDescription": "At this level, the focus is on helping the child become more engaged in communication and interactio...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, the child builds on their social engagement skills by learning to understand and resp...",
+          "htmlDescription": "At this stage, the child builds on their social engagement skills by learning to understand and resp...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, the child strengthens social communication skills and builds the ability to participa...",
+          "htmlDescription": "At this level, the child strengthens social communication skills and builds the ability to participa...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "name": "Analytic Language Processor",
+      "id": "analyticLanguage",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "In this level, the focus is on creating an environment that encourages spontaneous word use by using...",
+          "htmlDescription": "In this level, the focus is on creating an environment that encourages spontaneous word use by using...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "This level focuses on helping the child produce clear, functional words by strengthening their abili...",
+          "htmlDescription": "This level focuses on helping the child produce clear, functional words by strengthening their abili...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At this level, the focus is on growing the child’s vocabulary and moving from single words to two-wo...",
+          "htmlDescription": "At this level, the focus is on growing the child's vocabulary and moving from single words to two-wo...",
+          "match": false
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "name": "Gestalt Language Processor",
+      "id": "gestaltLanguage",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "This level focuses on helping caregivers and therapists understand and support a GLP’s unique langua...",
+          "htmlDescription": "This level focuses on helping caregivers and therapists understand and support a GLP's unique langua...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, the child begins to analyze and break apart their longer gestalts into smaller, more ...",
+          "htmlDescription": "At this stage, the child begins to analyze and break apart their longer gestalts into smaller, more ...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, gestalt language processors begin to pull single words out of their gestalts and use ...",
+          "htmlDescription": "At this level, gestalt language processors begin to pull single words out of their gestalts and use ...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "name": "AAC",
+      "id": "aacCurriculum",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, the focus is on introducing AAC as a reliable, consistent communication tool for expr...",
+          "htmlDescription": "At this stage, the focus is on introducing AAC as a reliable, consistent communication tool for expr...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, the child begins to use their AAC device or system for more than just requesting and ...",
+          "htmlDescription": "At this stage, the child begins to use their AAC device or system for more than just requesting and ...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, the focus is on independent, flexible communication across settings. The individual s...",
+          "htmlDescription": "At this level, the focus is on independent, flexible communication across settings. The individual s...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "name": "Articulation",
+      "id": "articulation",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "The sounds in this level are some of the first that children typically acquire as they learn to spea...",
+          "htmlDescription": "The sounds in this level are some of the first that children typically acquire as they learn to spea...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, we focus on speech sounds that require more precise tongue and airflow coordination. ...",
+          "htmlDescription": "At this level, we focus on speech sounds that require more precise tongue and airflow coordination. ...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, therapy focuses on speech sounds that require precise tongue movements, airflow contr...",
+          "htmlDescription": "At this level, therapy focuses on speech sounds that require precise tongue movements, airflow contr...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "name": "Phonology",
+      "id": "phonology",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, we focus on phonological processes that have the most significant impact on s...",
+          "htmlDescription": "At the Beginner Level, we focus on phonological processes that have the most significant impact on s...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, we target phonological processes that involve replacing or simplifying mo...",
+          "htmlDescription": "At the Intermediate Level, we target phonological processes that involve replacing or simplifying mo...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, we focus on phonological processes that persist longer in development and are...",
+          "htmlDescription": "At the Advanced Level, we focus on phonological processes that persist longer in development and are...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "name": "Motor Speech",
+      "id": "motorSpeech",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, therapy focuses on building a strong foundation for speech by developing cons...",
+          "htmlDescription": "At the Beginner Level, therapy focuses on building a strong foundation for speech by developing cons...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, therapy focuses on increasing speech complexity and utterance length by i...",
+          "htmlDescription": "At the Intermediate Level, therapy focuses on increasing speech complexity and utterance length by i...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, therapy focuses on refining speech coordination, accuracy, and fluency in mul...",
+          "htmlDescription": "At the Advanced Level, therapy focuses on refining speech coordination, accuracy, and fluency in mul...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 21,
+      "name": "Mumbling",
+      "id": "mumbling",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, therapy focuses on helping the child become aware of their speech clarity by ...",
+          "htmlDescription": "At the Beginner Level, therapy focuses on helping the child become aware of their speech clarity by ...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, the focus shifts from structured overarticulation in shorter speech tasks...",
+          "htmlDescription": "At the Intermediate Level, the focus shifts from structured overarticulation in shorter speech tasks...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, the focus is on independent self-monitoring—helping the child recognize when ...",
+          "htmlDescription": "At the Advanced Level, the focus is on independent self-monitoring—helping the child recognize when ...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 22,
+      "name": "Cycles Phonology",
+      "id": "cyclesPhonology",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "undefined...",
+          "htmlDescription": "This level uses the cycles approach to target the most basic phonological patterns in 2-3 week cycle...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "undefined...",
+          "htmlDescription": "This level targets more complex phonological patterns using shorter cycles as patterns become more s...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "undefined...",
+          "htmlDescription": "This level focuses on integrating multiple patterns and promoting generalization and carryover to co...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 23,
+      "name": "Following Directions",
+      "id": "followingDirections",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, therapy focuses on helping children understand and follow simple 1- and 2-ste...",
+          "htmlDescription": "At the Beginner Level, therapy focuses on helping children understand and follow simple 1- and 2-ste...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, children work on following longer, more complex directions that require i...",
+          "htmlDescription": "At the Intermediate Level, children work on following longer, more complex directions that require i...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, the focus shifts to following multi-step directions in real-world situations,...",
+          "htmlDescription": "At the Advanced Level, the focus shifts to following multi-step directions in real-world situations,...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "name": "Asking and Answering Questions",
+      "id": "askingAnswering",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, therapy focuses on helping children understand and respond to basic yes/no an...",
+          "htmlDescription": "At the Beginner Level, therapy focuses on helping children understand and respond to basic yes/no an...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, therapy focuses on helping children understand, answer, and ask a mix of ...",
+          "htmlDescription": "At the Intermediate Level, therapy focuses on helping children understand, answer, and ask a mix of ...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, therapy focuses on helping children use questions independently in real-world...",
+          "htmlDescription": "At the Advanced Level, therapy focuses on helping children use questions independently in real-world...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 25,
+      "name": "Sequencing",
+      "id": "sequencing",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, therapy focuses on helping children sequence and retell simple, familiar rout...",
+          "htmlDescription": "At the Beginner Level, therapy focuses on helping children sequence and retell simple, familiar rout...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, therapy focuses on helping children retell past events in a clear, logica...",
+          "htmlDescription": "At the Intermediate Level, therapy focuses on helping children retell past events in a clear, logica...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, therapy focuses on applying sequencing and retelling skills to academic tasks...",
+          "htmlDescription": "At the Advanced Level, therapy focuses on applying sequencing and retelling skills to academic tasks...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 26,
+      "name": "Abstract Language",
+      "id": "abstractLanguage",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, therapy focuses on helping children differentiate between literal and nonliteral mean...",
+          "htmlDescription": "At this level, therapy focuses on helping children differentiate between literal and nonliteral mean...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, therapy introduces a variety of figurative language types, helping children understan...",
+          "htmlDescription": "At this stage, therapy introduces a variety of figurative language types, helping children understan...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, individuals learn to interpret implied meanings, sarcasm, and humor, which re...",
+          "htmlDescription": "At the Advanced Level, individuals learn to interpret implied meanings, sarcasm, and humor, which re...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "name": "Grammar/Syntax",
+      "id": "grammarSyntax",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, therapy focuses on building a strong foundation in essential grammatical stru...",
+          "htmlDescription": "At the Beginner Level, therapy focuses on building a strong foundation in essential grammatical stru...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, therapy shifts from basic sentence formation to expanding sentence comple...",
+          "htmlDescription": "At the Intermediate Level, therapy shifts from basic sentence formation to expanding sentence comple...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, therapy focuses on refining and mastering grammar and syntax for clear, preci...",
+          "htmlDescription": "At the Advanced Level, therapy focuses on refining and mastering grammar and syntax for clear, preci...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "name": "Vocabulary",
+      "id": "vocabulary",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, therapy focuses on helping children develop a strong foundation of essential words ne...",
+          "htmlDescription": "At this level, therapy focuses on helping children develop a strong foundation of essential words ne...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, children move beyond basic vocabulary and begin expanding their word knowledge across...",
+          "htmlDescription": "At this stage, children move beyond basic vocabulary and begin expanding their word knowledge across...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, therapy focuses on supporting students in understanding and using academic an...",
+          "htmlDescription": "At the Advanced Level, therapy focuses on supporting students in understanding and using academic an...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 29,
+      "name": "Literacy Foundations",
+      "id": "literacyFoundations",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this level, therapy focuses on fundamental language and literacy readiness skills that set the st...",
+          "htmlDescription": "At this level, therapy focuses on fundamental language and literacy readiness skills that set the st...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, individuals move beyond basic literacy readiness and learn how different types of tex...",
+          "htmlDescription": "At this stage, individuals move beyond basic literacy readiness and learn how different types of tex...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "This level focuses on helping individuals use critical thinking and reasoning skills to deepen their...",
+          "htmlDescription": "This level focuses on helping individuals use critical thinking and reasoning skills to deepen their...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "name": "Narratives",
+      "id": "narratives",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 31,
+      "name": "Social Communication",
+      "id": "socialCommunication",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 32,
+      "name": "Pragmatics",
+      "id": "pragmatics",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 33,
+      "name": "Executive Functioning",
+      "id": "executiveFunctioning",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 34,
+      "name": "Cluttering",
+      "id": "cluttering",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "This level focuses on identifying differences in pitch, rate, and volume in environmental sounds and...",
+          "htmlDescription": "This level focuses on identifying differences in pitch, rate, and volume in environmental sounds and...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "This level focuses on adjusting pitch, rate, and volume in progressively complex speech tasks, from ...",
+          "htmlDescription": "This level focuses on adjusting pitch, rate, and volume in progressively complex speech tasks, from ...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At this stage, clients will integrate expected prosody into real-world conversations. This includes ...",
+          "htmlDescription": "undefined...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "name": "Fluency",
+      "id": "fluency",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 36,
+      "name": "Emotional Regulation and Self Advocacy",
+      "id": "emotionalRegulation",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, the focus is on helping children replace frustration-driven behaviors with fu...",
+          "htmlDescription": "At the Beginner Level, the focus is on helping children replace frustration-driven behaviors with fu...",
+          "match": true
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "This stage focuses on building an understanding of emotions and emotional vocabulary as well as lear...",
+          "htmlDescription": "This stage focuses on building an understanding of emotions and emotional vocabulary as well as lear...",
+          "match": true
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": false,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, individuals move beyond managing their emotions and begin to actively advocat...",
+          "htmlDescription": "At the Advanced Level, individuals move beyond managing their emotions and begin to actively advocat...",
+          "match": true
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "name": "Voice",
+      "id": "voice",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At the Beginner Level, the focus is on helping children recognize and engage in basic social interac...",
+          "htmlDescription": "Child will use gentle voice onset and appropriate voice quality during structured voice activities w...",
+          "match": false
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, individuals build on their ability to start conversations by learning how...",
+          "htmlDescription": "Student will demonstrate improved voice quality by reducing breathiness/hoarseness and using resonan...",
+          "match": false
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, individuals learn to navigate conversations that are more complex, such as wh...",
+          "htmlDescription": "Student will maintain optimal voice quality through advanced voice techniques, demonstrate carryover...",
+          "match": false
+        }
+      ]
+    },
+    {
+      "page": 38,
+      "name": "Resonance",
+      "id": "resonance",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At this level of therapy, a variety of environmental modifications will be made to increase the clie...",
+          "htmlDescription": "Child will demonstrate awareness of nasal vs oral sounds and produce oral sounds with appropriate re...",
+          "match": false
+        },
+        {
+          "level": "intermediate",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At the Intermediate Level, individuals explore reasons that they may want to communicate/speak with ...",
+          "htmlDescription": "Student will reduce hypernasality/hyponasality by demonstrating appropriate oral-nasal balance and v...",
+          "match": false
+        },
+        {
+          "level": "advanced",
+          "hasContent": true,
+          "hasAIContent": true,
+          "missingContent": false,
+          "markdownDescription": "At the Advanced Level, individuals gradually increase their ability to speak in progressively...",
+          "htmlDescription": "Student will maintain appropriate resonance balance using advanced techniques, self-monitor resonanc...",
+          "match": false
+        }
+      ]
+    },
+    {
+      "page": 39,
+      "name": "Hearing Loss",
+      "id": "hearingLoss",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "name": "Autism",
+      "id": "autism",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 41,
+      "name": "Down Syndrome",
+      "id": "downSyndrome",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    },
+    {
+      "page": 42,
+      "name": "Cerebral Palsy",
+      "id": "cerebralPalsy",
+      "levels": [
+        {
+          "level": "beginner",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "intermediate",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        },
+        {
+          "level": "advanced",
+          "hasContent": false,
+          "hasAIContent": false,
+          "missingContent": true,
+          "issue": "No HTML element found"
+        }
+      ]
+    }
+  ]
+}
