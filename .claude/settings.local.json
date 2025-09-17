@@ -8,7 +8,8 @@
       "Bash(sort:*)",
       "Bash(grep:*)",
       "Bash(wc:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Read(///**)"
     ],
     "deny": [],
     "ask": []
