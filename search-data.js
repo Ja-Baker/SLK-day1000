@@ -163,10 +163,10 @@ const searchData = {
         },
         {
             id: 'cyclesPhonology',
-            title: 'Cycles Approach to Speech Sounds',
+            title: 'Cycles Approach for Phonology Curriculum',
             type: 'Curriculum',
             description: 'Systematic approach to treating multiple phonological patterns',
-            keywords: ['cycles', 'approach', 'speech', 'sounds', 'phonological', 'systematic', 'multiple', 'patterns'],
+            keywords: ['cycles', 'approach', 'phonology', 'curriculum', 'speech', 'sounds', 'phonological', 'systematic', 'multiple', 'patterns'],
             pageId: 'cyclesPhonology'
         },
         {

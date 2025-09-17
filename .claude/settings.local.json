@@ -9,7 +9,8 @@
       "Bash(grep:*)",
       "Bash(wc:*)",
       "Bash(sed:*)",
-      "Read(///**)"
+      "Read(///**)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
