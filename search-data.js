@@ -1197,7 +1197,7 @@ const searchData = {
                         "approach",
                         "phonology"
                 ],
-                "pageId": "cyclesPhonology",
+                "pageId": "skillPage",
                 "category": "Phonology"
         },
         {
