@@ -1373,9 +1373,10 @@ const skillPagesContent = {
         category: "Emotional Regulation",
         externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-regulating-emotions-and-self-calming",
         content: ``
-    },
+        ?
 
-    respondingToOthers: {
+    respondingToOth+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    ers: {
         title: "Responding to Others",
         category: "Conversational Skills",
         externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-continuingmaintaining-an-interaction-responding-asking-questions-etc",

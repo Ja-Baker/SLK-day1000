@@ -6,21 +6,37 @@
     <title>SLK Curriculum Planning Tool</title>
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="script.js" as="script">
-    <link rel="preload" href="external-links-mapping.js" as="script">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="preload" href="src/js/script.js" as="script">
+    <link rel="preload" href="src/js/search-data.js" as="script">
+    <link rel="preload" href="src/js/search.js" as="script">
+    <link rel="preload" href="src/js/external-links-mapping.js" as="script">
     
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//hub.speechandlanguagekids.com">
     <link rel="dns-prefetch" href="//www.dropbox.com">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
     <div class="container">
         <!-- Navigation Header -->
         <header class="nav-header">
             <button class="back-btn" id="backBtn" style="display: none;">← Back</button>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search curriculums or skills...">
+                <button id="clearSearch" class="clear-search-btn" style="display: none;">×</button>
+                
+                <!-- Search Results Dropdown - Inside search-wrapper for proper positioning -->
+                <div id="searchResults" class="search-results" style="display: none;">
+                    <div class="search-results-header">
+                        <span id="resultsCount">0 results found</span>
+                    </div>
+                    <div id="searchResultsList" class="search-results-list">
+                        <!-- Results populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
             <h1 class="site-title">SLK Curriculum Planning Tool</h1>
         </header>
 
@@ -831,7 +847,7 @@
             <!-- BT-8008: Curriculum pages with functional content -->
             <div id="earlyInteractions" class="page">
                 <h2>Early Interactions Curriculum</h2>
-                <p>This curriculum will encourage the individual to engage, respond, and participate in social interactions. Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
+                <p>This curriculum will encourage the individual  to engage, respond, and participate in social interactions.  Choose the level below that best fits this individual's current level.  You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
                 <div class="level-selection">
                     <!-- Beginner Level Card -->
@@ -877,7 +893,7 @@
                         <h3>Beginner Level: Building Awareness and Engagement</h3>
                         <button class="collapse-btn" onclick="toggleLevel('earlyInteractions', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>At this level, therapy focuses on building foundational social connections, helping the child recognize and respond to their name, share attention with others, and participate in simple turn-taking activities.</p>
+                    <p>At this level, the focus is on helping the child become more engaged in communication and interactions with others. Many children who struggle with communication may not yet respond to their name consistently or participate in shared activities. Therapy at this level uses play-based strategies to encourage engagement and increase responsiveness to social interactions.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
@@ -1105,7 +1121,7 @@
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, during a 10-minute interaction with an adult, _____ will produce five 2-word combinations, either in imitation or spontaneously produced, with models and prompts from the adult as needed.</p>
+                        <p>By the end of the reporting period, during a 10-minute interaction with an adult, _______ will produce five 2-word combinations, either in imitation or spontaneously produced, with models and prompts from the adult as needed.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1269,11 +1285,11 @@
                         <h3>Beginner Level: AAC Foundations</h3>
                         <button class="collapse-btn" onclick="toggleLevel('aacCurriculum', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on establishing basic AAC skills and familiarity with the communication system.</p>
+                    <p>At this stage, the focus is on introducing AAC as a reliable, consistent communication tool for expressing wants, needs, and ideas. Many early AAC users begin by imitating core vocabulary and learning to use their device to request items. However, true functional communication happens when a child can spontaneously use their AAC system in interactions.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will use their AAC system to make at least 5 different requests during a 10-minute activity with minimal prompting.</p>
+                        <p>By the end of the reporting period, during 10-minutes of interaction with the therapist (who is modeling AAC use), _______ will spontaneously use the AAC device to communicate a want, need, or idea at least ___ times.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1290,11 +1306,11 @@
                         <h3>Intermediate Level: Functional Communication</h3>
                         <button class="collapse-btn" onclick="toggleLevel('aacCurriculum', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>At this level, individuals expand their AAC use to include multiple communication functions.</p>
+                    <p>At this stage, the child begins to use their AAC device or system for more than just requesting and expands their ability to communicate for a variety of reasons. Instead of only saying "I want," they learn to reject, describe, indicate location, and self-advocate, building a more functional and flexible communication system.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will use their AAC system for requesting, commenting, and protesting during structured activities with 80% accuracy.</p>
+                        <p>By the end of the reporting period, during a 10-minute interaction with the therapist (who is modeling AAC use), _______ will spontaneously use alternative and augmentative communication (AAC) or spoken speech to express at least _(number)_ different communicative intents (examples: rejection/cessation, recurrence, actions, attributes, possession, location, self-advocacy).</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1311,7 +1327,7 @@
                         <h3>Advanced Level: Complex Communication</h3>
                         <button class="collapse-btn" onclick="toggleLevel('aacCurriculum', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on sophisticated communication skills using AAC for social interaction and conversation.</p>
+                    <p>At this level, the focus is on independent, flexible communication across settings. The individual should be able to use AAC to engage in conversations, advocate for themselves, and navigate real-world situations.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
@@ -1372,11 +1388,11 @@
                         <h3>Beginner Level: Sound Awareness and Isolation</h3>
                         <button class="collapse-btn" onclick="toggleLevel('articulation', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on helping the child become aware of their target sound and learn to produce it correctly in isolation.</p>
+                    <p>The sounds in this level are some of the first that children typically acquire as they learn to speak. They are produced with simple mouth movements and are foundational for clear communication. Mastering these early sounds helps build confidence and sets the stage for developing more complex speech patterns. Therapy at this level focuses on helping the child accurately produce these sounds in isolation, then gradually using them in syllables, words, and simple phrases.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce their target sound(s) in isolation with 80% accuracy across 3 consecutive therapy sessions.</p>
+                        <p>By the end of the reporting period, _______ will correctly produce early-developing speech sounds (/b, n, m, p, h, w, d/ and vowels) in structured conversational tasks (e.g., retelling a simple story or providing a short response to a question/prompt) with 80% accuracy across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1395,11 +1411,11 @@
                         <h3>Intermediate Level: Sound Production in Words</h3>
                         <button class="collapse-btn" onclick="toggleLevel('articulation', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>At this level, the child practices their target sounds in syllables, words, and short phrases to build consistency and accuracy.</p>
+                    <p>At this level, we focus on speech sounds that require more precise tongue and airflow coordination. These sounds typically emerge after the early-developing sounds but may still be challenging for some individuals.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce their target sound(s) in words at the beginning, middle, and end positions with 80% accuracy during structured activities.</p>
+                        <p>By the end of the reporting period, _________ will correctly produce mid-developing speech sounds (/ɡ, k, f, t, ŋ ("ng"), "y"/) in structured conversational tasks (e.g., retelling a simple story or providing a short response to a question/prompt) with 80% accuracy across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1416,7 +1432,7 @@
                         <h3>Advanced Level: Generalization and Carryover</h3>
                         <button class="collapse-btn" onclick="toggleLevel('articulation', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on using target sounds correctly in connected speech and developing self-monitoring skills for independent sound production.</p>
+                    <p>At this level, therapy focuses on speech sounds that require precise tongue movements, airflow control, and coordination. These later-developing sounds are often the most challenging for children to master and may impact overall speech intelligibility if not produced correctly.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
@@ -1484,11 +1500,11 @@
                         <h3>Beginner Level: Basic Phonological Patterns</h3>
                         <button class="collapse-btn" onclick="toggleLevel('phonology', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level targets the most basic phonological patterns that affect intelligibility, focusing on sound deletions that make words difficult to understand.</p>
+                    <p>At the Beginner Level, we focus on phonological processes that have the most significant impact on speech intelligibility and are typically eliminated first in development. These processes involve omitting entire sounds or syllables, making speech difficult to understand.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce final consonants in CVC words with 80% accuracy during structured activities.</p>
+                        <p>By the end of the reporting period, _________ will eliminate initial consonant deletion, final consonant deletion, and unstressed syllable deletion in conversational speech, producing complete words with all expected sounds (sound substitutions are acceptable as long as all sounds are represented) with fewer than 5 errors in 10 minutes of conversation, as measured by clinician observation and data collection.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1505,11 +1521,11 @@
                         <h3>Intermediate Level: Complex Phonological Patterns</h3>
                         <button class="collapse-btn" onclick="toggleLevel('phonology', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>This level addresses more complex phonological patterns that involve sound substitutions and cluster simplification.</p>
+                    <p>At the Intermediate Level, we target phonological processes that involve replacing or simplifying more complex sounds, which can still significantly impact intelligibility.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce consonant clusters in words with 70% accuracy during structured practice activities.</p>
+                        <p>By the end of the reporting period, __________ will eliminate velar fronting, backing, stopping of fricatives, and cluster reduction in conversational speech with fewer than 5 errors in 10 minutes of conversation, as measured by clinician observation and data collection.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1528,11 +1544,11 @@
                         <h3>Advanced Level: Complex Sound System Patterns</h3>
                         <button class="collapse-btn" onclick="toggleLevel('phonology', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level targets sophisticated phonological patterns involving voicing changes and complex syllable structures.</p>
+                    <p>At the Advanced Level, we focus on phonological processes that persist longer in development and are harder to perceive and therefore teach in therapy.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce appropriate voicing patterns in words with 80% accuracy during conversational speech samples.</p>
+                        <p>By the end of the reporting period, __________ will eliminate gliding of liquids, prevocalic voicing, and postvocalic devoicing in conversational speech with fewer than 5 errors in 10 minutes of conversation, as measured by clinician observation and data collection.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1547,7 +1563,7 @@
             </div>
 
             <div id="cyclesPhonology" class="page">
-                <h2>Cycles Approach to Speech Sounds Curriculum</h2>
+                <h2>Cycles Approach for Phonology Curriculum</h2>
                 <p>This is a great option for individuals with many sound errors. You'll take a cyclical approach to therapy by working on each sound error for 1-2 weeks and cycling between targeting multiple sounds or phonological processes.</p>
                 <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
@@ -1700,11 +1716,11 @@
                         <h3>Beginner Level: Basic Motor Coordination</h3>
                         <button class="collapse-btn" onclick="toggleLevel('motorSpeech', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on establishing basic oral motor skills and simple movement patterns for speech production.</p>
+                    <p>At the Beginner Level, therapy focuses on building a strong foundation for speech by developing consistent and accurate motor planning for simple word structures.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will demonstrate improved oral motor coordination and produce simple CV and VC syllable sequences with increased accuracy.</p>
+                        <p>By the end of the reporting period, given multisensory cues and verbal models, ________ will accurately produce CV, VC, and CVC word structures at least 30 times within a 15-minute play-based session in 80% of opportunities across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1721,11 +1737,11 @@
                         <h3>Intermediate Level: Speech Sequencing and Planning</h3>
                         <button class="collapse-btn" onclick="toggleLevel('motorSpeech', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>This level develops motor planning skills for longer utterances and introduces prosodic elements to speech production.</p>
+                    <p>At the Intermediate Level, therapy focuses on increasing speech complexity and utterance length by introducing expanded word structures (e.g., CVCV, CCVC) and combining simple words into longer phrases. As children with motor speech disorders develop greater consistency with individual words, they must learn to transition smoothly between sounds and syllables while producing longer utterances.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce multi-syllabic words and short phrases with appropriate stress patterns and improved motor coordination.</p>
+                        <p>By the end of the reporting period, given verbal models and multisensory cues, __________  will accurately produce expanded word structures (CVCV, CCVC) and/or combine CV, VC, and CVC words into two- to three-word utterances at least 30 times within a 15-minute play-based session across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1742,11 +1758,11 @@
                         <h3>Advanced Level: Complex Motor Patterns</h3>
                         <button class="collapse-btn" onclick="toggleLevel('motorSpeech', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on automatic speech production and generalization of motor speech skills to conversational contexts.</p>
+                    <p>At the Advanced Level, therapy focuses on refining speech coordination, accuracy, and fluency in multi-syllabic words and connected speech. As speech complexity increases, children with motor speech disorders may struggle with smooth transitions between sounds and syllables, as well as maintaining consistent articulation and natural prosody.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will demonstrate automatic production of complex motor speech patterns in conversational speech with improved intelligibility.</p>
+                        <p>By the end of the reporting period, __________ will improve speech intelligibility and fluidity by achieving at least a 4 out of 5 on the following rubric, as measured by the classroom teacher.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1807,11 +1823,11 @@
                         <h3>Beginner Level: Basic Clarity Awareness</h3>
                         <button class="collapse-btn" onclick="toggleLevel('mumbling', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on building awareness of speech clarity and establishing basic precision in articulation.</p>
+                    <p>At the Beginner Level, therapy focuses on helping the child become aware of their speech clarity by practicing intentional overarticulation in structured activities. Many children who mumble are unaware that their speech is unclear, so this stage emphasizes exaggerating speech movements, slowing down, and fully pronouncing words to establish a foundation for clear communication. By using overarticulation in structured tasks, the child learns what clear speech feels and sounds like, making it easier to carry over into everyday interactions.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will demonstrate awareness of speech clarity and produce words with improved articulation precision during structured activities.</p>
+                        <p>By the end of the reporting period, ________ will use intentional overarticulation (exaggerated speech clarity) when speaking single sentences when prompted during therapy on 80% of opportunities.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1828,11 +1844,11 @@
                         <h3>Intermediate Level: Structured Speech Clarity</h3>
                         <button class="collapse-btn" onclick="toggleLevel('mumbling', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>This level develops consistent clear speech production in structured contexts with self-monitoring skills.</p>
+                    <p>At the Intermediate Level, the focus shifts from structured overarticulation in shorter speech tasks to using the strategy as needed in longer speaking opportunities. At this stage, the child practices speaking naturally but learns to adjust their clarity in response to cues from a listener, such as a verbal reminder or a visual signal. This helps them build self-awareness and control over their speech while still having external support.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will produce clear speech at an appropriate rate and volume during structured speaking tasks with 80% intelligibility.</p>
+                        <p>By the end of the reporting period, _________ Student will overarticulate (properly and precisely pronounce every sound) in conversation when he receives a visual signal from the therapist on 80% of opportunities.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1849,11 +1865,11 @@
                         <h3>Advanced Level: Conversational Intelligibility</h3>
                         <button class="collapse-btn" onclick="toggleLevel('mumbling', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on maintaining clear speech in conversational contexts and developing repair strategies.</p>
+                    <p>At the Advanced Level, the focus is on independent self-monitoring—helping the child recognize when their speech is unclear and correct it without external cues. By this stage, they have practiced overarticulation and responding to prompts, and now the goal is for them to naturally adjust their clarity in everyday conversations. Therapy at this level emphasizes real-time awareness, self-correction, and maintaining clear speech across different settings, ensuring that improved articulation and volume become a consistent habit in daily interactions.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will maintain clear, intelligible speech during conversational exchanges and use appropriate repair strategies when misunderstood.</p>
+                        <p>By the end of the reporting period, During ten minutes of unstructured conversation in a natural setting, __________ will achieve a score of 4 or higher on the intelligibility and breakdown repair rubric below, as rated by the speech-language pathologist, on three consecutive data collection days.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1914,11 +1930,11 @@
                         <h3>Beginner Level: Simple One-Step Directions</h3>
                         <button class="collapse-btn" onclick="toggleLevel('followingDirections', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on establishing the foundation for following simple, single-step instructions with familiar vocabulary and actions.</p>
+                    <p>At the Beginner Level, therapy focuses on helping children understand and follow simple 1- and 2-step directions using familiar language and structured tasks.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will follow simple one-step directions containing familiar vocabulary with 80% accuracy in structured activities.</p>
+                        <p>By the end of the reporting period, given visual and verbal cues, _________ will follow 1- and 2-step directions containing basic spatial and action concepts (e.g., "Put the block in the box, then clap your hands") with 80% accuracy across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1935,11 +1951,11 @@
                         <h3>Intermediate Level: Multi-Step Directions</h3>
                         <button class="collapse-btn" onclick="toggleLevel('followingDirections', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>This level develops the ability to understand and carry out multi-step instructions in sequence.</p>
+                    <p>At the Intermediate Level, children work on following longer, more complex directions that require increased attention, memory, and language processing.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will follow two-step directions containing familiar vocabulary with 75% accuracy during structured activities.</p>
+                        <p>By the end of the reporting period, given verbal instructions without visual supports, ________ will follow multi-step and non-routine directions (e.g., "Before you color the picture, put your name at the top and fold the paper in half") with 80% accuracy across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1956,11 +1972,11 @@
                         <h3>Advanced Level: Complex and Conditional Directions</h3>
                         <button class="collapse-btn" onclick="toggleLevel('followingDirections', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on understanding complex instructions with conditional elements and advanced concepts.</p>
+                    <p>At the Advanced Level, the focus shifts to following multi-step directions in real-world situations, such as classroom tasks, academic instructions, and daily routines. These directions often require listening, problem-solving, and carrying out multiple steps independently.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will follow complex multi-step directions including conditional and temporal concepts with 70% accuracy.</p>
+                        <p>By the end of the reporting period, given verbal instructions in a natural setting, ______________ will follow multi-step directions related to classroom activities and real-life tasks (e.g., "Get your notebook, write the date at the top, and copy the first sentence from the board") with 80% accuracy across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -1974,7 +1990,7 @@
             </div>
 
             <div id="sequencing" class="page">
-                <h2>Sequencing & Retelling Curriculum</h2>
+                <h2>Sequencing and Retelling Curriculum</h2>
                 <p>Developing sequencing skills is important to help a child organize their thoughts and successfully communicate information to others.</p>
                 <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
@@ -2027,11 +2043,11 @@
                         <h3>Beginner Level: Sequencing and Retelling Common Tasks</h3>
                         <button class="collapse-btn" onclick="toggleLevel('sequencing', 'beginner')">Collapse ▲</button>
                     </div>
-                    <p>This level establishes foundational sequencing skills using visual supports and familiar routines.</p>
+                    <p>At the Beginner Level, therapy focuses on helping children sequence and retell simple, familiar routines and tasks in the correct order.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will sequence 3 picture cards depicting a familiar activity and describe the sequence using "first, then, last" with 80% accuracy.</p>
+                        <p>By the end of the reporting period, given visual or verbal prompts, ________ will accurately sequence and verbally retell the steps of a familiar task (e.g., brushing teeth, making a sandwich) in the correct order using transition words (first, next, last) in 80% of opportunities across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -2048,11 +2064,11 @@
                         <h3>Intermediate Level: Story Sequencing and Simple Retelling</h3>
                         <button class="collapse-btn" onclick="toggleLevel('sequencing', 'intermediate')">Collapse ▲</button>
                     </div>
-                    <p>This level develops the ability to sequence longer stories and retell them with appropriate temporal markers.</p>
+                    <p>At the Intermediate Level, therapy focuses on helping children retell past events in a clear, logical order. Many children who struggle with this skill may jump around in their story, leave out important details, or assume the listener already knows what happened. During this stage, children learn to provide context, include key details, and organize their thoughts using sequencing words (e.g., first, then, last).</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will retell a familiar story including at least 4 key events in correct sequence using temporal markers with 75% accuracy.</p>
+                        <p>By the end of the reporting period, given visual or verbal prompts, _________ will accurately retell a past event (e.g., what they did over the weekend) using a clear beginning, middle, and end, while providing necessary details and sequencing words (first, then, last) in 80% of opportunities across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -2069,11 +2085,11 @@
                         <h3>Advanced Level: Complex Narratives and Personal Experiences</h3>
                         <button class="collapse-btn" onclick="toggleLevel('sequencing', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on independent narrative organization and inclusion of story grammar elements.</p>
+                    <p>At the Advanced Level, therapy focuses on applying sequencing and retelling skills to academic tasks, such as summarizing a story, explaining a classroom activity, or organizing thoughts for written assignments.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will independently retell a personal experience or story including characters, setting, problem, and solution in logical sequence with 80% accuracy.</p>
+                        <p>By the end of the reporting period, given verbal or written prompts, ____________ will accurately retell a narrative or academic event (e.g., summarizing a story, explaining a science experiment) using a clear structure, appropriate sequencing, and temporal concepts (e.g., before, during, after) in 80% of opportunities across three consecutive sessions.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -2087,7 +2103,7 @@
             </div>
 
             <div id="abstractLanguage" class="page">
-                <h2>Abstract Language Curriculum</h2>
+                <h2>Abstract Language</h2>
                 <p>Developing abstract language skills is essential for understanding nuanced communication, engaging in complex conversations, and interpreting meaning beyond literal words. Some children struggle with abstract language because they rely heavily on concrete thinking, which can make it difficult to grasp figurative expressions, infer unstated meanings, or detect humor and sarcasm. These difficulties can impact social interactions, academic performance, and comprehension of both spoken and written language.</p>
                 <p>Choose the level below that best fits this individual's current level. You don't necessarily need to start at the first level if they have advanced beyond it.</p>
                 
@@ -2172,11 +2188,11 @@
                         <h3>Advanced Level: Inferencing and Social Nuance</h3>
                         <button class="collapse-btn" onclick="toggleLevel('abstractLanguage', 'advanced')">Collapse ▲</button>
                     </div>
-                    <p>This level focuses on sophisticated inferencing skills and understanding social nuances in language use.</p>
+                    <p>At the Advanced Level, individuals learn to interpret implied meanings, sarcasm, and humor, which require strong inferencing skills and social awareness.</p>
                     
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>By the end of the reporting period, _____ will make appropriate inferences from text and social situations and recognize sarcasm and irony with 75% accuracy.</p>
+                        <p><strong>In Text:</strong><br>By the end of the reporting period, after reading a text, ______________________ will make an appropriate inference from the text and refer to details and examples in the text when explaining how he/she drew that inference on four of five observed opportunities.<br><br><strong>Social Inferencing:</strong><br>By the end of the reporting period, after reading, watching, or hearing a description of a social scenario (some including sarcasm), ______________________ will use social cues plus background information to make an appropriate inference of what has happened or is happening on four of five observed opportunities.</p>
                     </div>
                     
                     <div class="activities-section">
@@ -2233,9 +2249,15 @@
                 </div>
                 
                 <div id="vocabulary-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Core Vocabulary Foundations</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('vocabulary', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, therapy focuses on helping children develop a strong foundation of essential words needed for everyday communication.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will demonstrate understanding of 50+ core vocabulary words (nouns, verbs, adjectives) by pointing to pictures, following directions, or using words functionally in 4 out of 5 opportunities across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ________ will demonstrate functional use of core vocabulary for communication by achieving a 4 or 5 on the following rubric, as measured by parents/caregivers/teachers.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2249,9 +2271,15 @@
                 </div>
                 
                 <div id="vocabulary-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Expanding Word Knowledge</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('vocabulary', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At this stage, children move beyond basic vocabulary and begin expanding their word knowledge across different categories.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will categorize vocabulary words into semantic groups (animals, food, clothing, etc.) with 80% accuracy and explain word relationships using "goes with" or "is a type of" in 4 out of 5 trials across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ____________ will expand their vocabulary by using a variety of words to describe, categorize, and express ideas by achieving a 4 or 5 on the following rubric, as measured by the classroom teacher.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2265,9 +2293,15 @@
                 </div>
                 
                 <div id="vocabulary-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Academic and Strategic Vocabulary</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('vocabulary', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At the Advanced Level, therapy focuses on supporting students in understanding and using academic and curriculum-based vocabulary, as well as teaching them strategies to independently learn unfamiliar words.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will use context clues and morphological analysis to determine meanings of unfamiliar academic vocabulary words, achieving 70% accuracy on grade-level texts and demonstrating understanding through definitions or synonyms in 4 out of 5 opportunities.</p>
+                        <p>By the end of the reporting period, given a newly introduced curriculum-related word, _______ will apply multiple word-learning strategies (e.g., analyzing affixes, using context clues, identifying synonyms/antonyms, and recognizing multiple meanings) to determine and explain the word's meaning, by achieving a 4 or 5 on the following rubric as measured by the classroom teacher.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2327,9 +2361,15 @@
                 </div>
                 
                 <div id="askingAnswering-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Basic Yes/No and WH- Questions</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('askingAnswering', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>At the Beginner Level, therapy focuses on helping children understand and respond to basic yes/no and wh- questions in structured tasks. Many children need explicit instruction to grasp the meaning of different question types, so this stage introduces one question type at a time (e.g., starting with "where" questions before moving to "who" or "what" questions).</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will ask simple questions using "what" and "where" and answer yes/no questions appropriately in 4 out of 5 opportunities during structured activities across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, given structured tasks focusing on one question type at a time, _________ will accurately answer yes/no and wh- questions (who, what, where, when, why, how, which) with 80% accuracy across three consecutive sessions.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2343,9 +2383,15 @@
                 </div>
                 
                 <div id="askingAnswering-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Mixed Questions in Conversations</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('askingAnswering', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At the Intermediate Level, therapy focuses on helping children understand, answer, and ask a mix of yes/no and wh- questions naturally within conversations. At this stage, children move beyond structured practice with single question types and begin responding to a variety of questions in real-time interactions.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will ask and answer WH- questions (who, what, where, when, why) using complete sentences with 80% accuracy during conversation and story activities in 4 out of 5 trials across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, during a 15-minute conversation with the therapist, _______ will accurately answer and ask a variety of yes/no and wh- questions at least 10 times across three consecutive sessions.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2359,9 +2405,14 @@
                 </div>
                 
                 <div id="askingAnswering-advanced" class="level-content" style="display:none;">
-                    <div class="goal-box">
-                        <h4>Sample Goal:</h4>
-                        <p>Student will formulate inferential questions about text and provide detailed, elaborated answers to open-ended questions with 70% accuracy during reading comprehension activities across 3 consecutive sessions.</p>
+                    <div class="level-header">
+                        <h3>Advanced Level: Using Questions in Classwork and Daily Activities</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('askingAnswering', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At the Advanced Level, therapy focuses on helping children use questions independently in real-world settings, such as classroom activities, social interactions, and problem-solving situations. Children practice answering complex, multi-step questions in academic settings while also learning to initiate and use questions to navigate social and functional situations.</p>
+
+                    <div class="note-box">
+                        <p><strong>Note:</strong> Therapy becomes customized to the specific types of question skills that the individual is struggling with. Work with teachers and caregivers to identify specific needs.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2429,9 +2480,15 @@
                 </div>
                 
                 <div id="grammarSyntax-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Essential Grammar Foundations</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('grammarSyntax', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>At the Beginner Level, therapy focuses on building a strong foundation in essential grammatical structures that form the backbone of clear and effective communication. Many children at this stage may struggle with forming complete sentences, using the correct verb tense, or understanding basic grammatical markers like plurals and possessives.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will use 2-3 word sentences with correct noun-verb agreement and basic pronouns (I, me, you) in 4 out of 5 opportunities during structured activities across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ________ will produce simple, grammatically correct sentences in conversational speech, making no more than 5 grammatical errors within a 10-minute conversation in the therapy room on three consecutive data collection days.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2445,9 +2502,15 @@
                 </div>
                 
                 <div id="grammarSyntax-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Expanding Sentence Complexity</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('grammarSyntax', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At the Intermediate Level, therapy shifts from basic sentence formation to expanding sentence complexity and refining grammatical accuracy.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will use correct past and future tense verbs, plurals, and possessives in complete sentences with 80% accuracy during conversation and structured activities in 4 out of 5 trials across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, given visual or verbal prompts as needed, ____________ will produce grammatically correct compound and complex sentences in structured conversation and storytelling, demonstrating correct verb tense, subject-verb agreement, and appropriate conjunction use, with no more than 3 errors in a 10-minute interaction, across three consecutive sessions.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2461,9 +2524,15 @@
                 </div>
                 
                 <div id="grammarSyntax-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Mastering Complex Grammar</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('grammarSyntax', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At the Advanced Level, therapy focuses on refining and mastering grammar and syntax for clear, precise, and sophisticated communication.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will produce complex sentences using subordinating conjunctions, passive voice, and conditional statements with 70% accuracy in written and spoken language tasks across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, given minimal verbal or visual prompts, _________ will demonstrate mastery of advanced grammar and syntax in both spoken and written language, by achieving a 4 or 5 on the following rubric as measured by the classroom teacher.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2521,9 +2590,15 @@
                 </div>
                 
                 <div id="literacyFoundations-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Foundational Literacy Skills</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('literacyFoundations', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>At this level, therapy focuses on fundamental language and literacy readiness skills that set the stage for future reading and writing success.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will demonstrate phonological awareness by identifying rhyming words, clapping syllables, and recognizing beginning sounds with 80% accuracy during structured literacy activities across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ________ will demonstrate foundational literacy skills that indicate a readiness for formal literacy instruction by achieving at least a 4 out of 5 on the following rubric as graded by the classroom teacher over the preceding two weeks:</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2537,9 +2612,15 @@
                 </div>
                 
                 <div id="literacyFoundations-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Text Structure Understanding</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('literacyFoundations', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>At this stage, individuals move beyond basic literacy readiness and learn how different types of texts are structured. Understanding narratives, informational texts, and opinion-based writing is essential for both comprehension and writing skills. Therapy at this level focuses on helping individuals recognize, interpret, and organize information within various text structures.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will use phoneme manipulation skills to blend and segment sounds and demonstrate reading comprehension by identifying main idea and story elements with 70% accuracy across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ________ will demonstrate understanding and use of a variety of discourse structures in both spoken and written language by achieving at least a 4 out of 5 on the following rubric as graded by the classroom teacher over the preceding two weeks:</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -2553,9 +2634,15 @@
                 </div>
                 
                 <div id="literacyFoundations-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Critical Thinking in Reading and Writing</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('literacyFoundations', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on helping individuals use critical thinking and reasoning skills to deepen their understanding of written texts and clearly express their own ideas in writing.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will demonstrate advanced literacy skills by analyzing complex texts for main idea, making inferences, and producing well-organized written responses with 70% accuracy across academic subjects.</p>
+                        <p>By the end of the reporting period, ________ will demonstrate ability to use critical thinking and reasoning skills in reading and writing tasks by achieving at least a 4 out of 5 on the following rubric as graded by the classroom teacher over the preceding two weeks:</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -3218,7 +3305,7 @@
             </div>
 
             <div id="emotionalRegulation" class="page">
-                <h2>Emotional Regulation and Self-Advocacy Curriculum</h2>
+                <h2>Emotional Regulation and Self Advocacy Curriculum</h2>
                 <p>Choose this if the individual needs to work on managing emotions and advocating for their needs effectively.</p>
                 <p>Choose the level below that best fits this individual's current emotional regulation and self-advocacy skills.</p>
                 
@@ -3261,9 +3348,15 @@
                 </div>
                 
                 <div id="emotionalRegulation-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Replacing Challenging Behaviors with Communication</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('emotionalRegulation', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>At the Beginner Level, the focus is on helping children replace frustration-driven behaviors with functional communication.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will identify and label basic emotions (happy, sad, mad, scared) and use at least 2 simple calming strategies when upset with 80% accuracy across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, during a 20-minute observation in the classroom (or select another setting), _______ will communicate ______ by using language (speech, sign language, or AAC) while refraining from using inappropriate behaviors (insert example behaviors here) on four of five observed opportunities (in this case, an observed opportunity includes when Client seems to want/need to __________).</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -3277,9 +3370,15 @@
                 </div>
                 
                 <div id="emotionalRegulation-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Emotional Understanding & Self-Calming</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('emotionalRegulation', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>This stage focuses on building an understanding of emotions and emotional vocabulary as well as learning strategies to calm down or regulate emotions as needed.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will identify emotion triggers, select appropriate coping strategies from their toolbox, and demonstrate self-calming with 70% independence during challenging situations across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, given visual supports, modeling, and structured opportunities, _________  will identify and label their own emotions using appropriate emotional vocabulary and select a coping strategy to regulate their emotions in 4 out of 5 opportunities across three consecutive sessions.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -3293,9 +3392,15 @@
                 </div>
                 
                 <div id="emotionalRegulation-advanced" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Advanced Level: Self-Advocacy & Proactive Regulation</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('emotionalRegulation', 'advanced')">Collapse ▲</button>
+                    </div>
+                    <p>At the Advanced Level, individuals move beyond managing their emotions and begin to actively advocate for themselves in daily interactions.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will independently regulate emotions, advocate for personal needs assertively, and resolve conflicts using appropriate strategies with 70% effectiveness across various social and academic contexts.</p>
+                        <p>By the end of the reporting period, ________ will demonstrate self-advocacy skills by achieving at least a 4 out of 5 on the follow rubric, as rated by the classroom teacher:<br><br>Over the past two weeks, how often has this student advocated for their needs by speaking up to make choices, ask for help, ask for clarification, or indicate that they don't want/like something?<br>5 = Often, and without needing reminders or prompts<br>4 = Most of the time but occasionally needed reminders or prompts<br>3 = About half of the time, with reminders and prompts<br>2 = Occasionally, but required many reminders and prompts to do so<br>1 = Very rarely or never, even with reminders and prompts</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -3711,9 +3816,15 @@
                 </div>
                 
                 <div id="cluttering-beginner" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Beginner Level: Attending to Prosody in Sounds and Speech</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('cluttering', 'beginner')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on identifying differences in pitch, rate, and volume in environmental sounds and speech.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Child will demonstrate awareness of speech rate, use basic pausing, and produce clear speech at a slower rate with 80% accuracy during structured reading and speaking activities across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ________ will identify and describe pitch, rate, and volume in recorded or live environmental sounds, using at least two words to describe each sound (e.g., "high and loud," "soft and slow") in 8 out of 10 opportunities on 3 out of 4 data collection days.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -3727,9 +3838,15 @@
                 </div>
                 
                 <div id="cluttering-intermediate" class="level-content" style="display:none;">
+                    <div class="level-header">
+                        <h3>Intermediate Level: Using Expected Prosody in Speech</h3>
+                        <button class="collapse-btn" onclick="toggleLevel('cluttering', 'intermediate')">Collapse ▲</button>
+                    </div>
+                    <p>This level focuses on adjusting pitch, rate, and volume in progressively complex speech tasks, from single words to sentences.</p>
+
                     <div class="goal-box">
                         <h4>Sample Goal:</h4>
-                        <p>Student will reduce speech rate using pausing strategies and self-monitoring to maintain clear articulation with 70% consistency during reading and conversation across 3 consecutive sessions.</p>
+                        <p>By the end of the reporting period, ____________ will independently demonstrate expected prosody (i.e., appropriate pitch, rate, and volume) in phrases and sentences with 8 out of 10 accuracy on 3 out of 4 data collection days.</p>
                     </div>
                     <div class="activities-section">
                         <h4>Therapy Activities:</h4>
@@ -3769,11 +3886,11 @@
     </div>
 
     <!-- Critical scripts loaded immediately -->
-    <script src="script.js"></script>
-    <script src="external-links-mapping.js"></script>
-    
-    <!-- Non-critical scripts loaded asynchronously -->
-    <script defer src="skill-pages-complete.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/external-links-mapping.js"></script>
+    <script src="src/js/skill-pages-complete.js"></script>
+    <script src="src/js/search-data.js"></script>
+    <script src="src/js/search.js"></script>
     
     <!-- Performance optimization script -->
     <script>

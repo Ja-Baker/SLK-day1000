@@ -46,7 +46,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Header */
+/* Navigation Header - Sticky and Dynamic */
 .nav-header {
     background-color: var(--pink);
     color: var(--white);
@@ -54,13 +54,11 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.nav-header {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+    transition: box-shadow 0.3s ease;
 }
 
 .back-btn {
@@ -1404,5 +1402,453 @@ p {
     .resource-btn,
     .tracking-btn {
         text-align: center;
+    }
+}
+
+/* Search Feature Styles - Using Existing SLK Design Patterns */
+
+/* Search Wrapper in Header */
+.search-wrapper {
+    position: relative;
+    flex: 0 0 300px;
+    margin: 0 var(--spacing-md);
+}
+
+.search-input {
+    font-family: 'Candara', 'Calibri', 'Arial', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: var(--white);
+    color: var(--black);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(0, 147, 172, 0.1), 0 0 8px rgba(0, 147, 172, 0.2);
+    transform: translateY(-1px);
+}
+
+.search-input:focus:not(:placeholder-shown) {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(160, 206, 78, 0.1), 0 0 8px rgba(160, 206, 78, 0.2);
+}
+
+.search-input::placeholder {
+    color: var(--dark-gray);
+    font-weight: normal;
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.clear-search-btn:hover {
+    background-color: var(--gray);
+    color: var(--black);
+}
+
+/* Search Results Dropdown - Enhanced with smooth scrolling and animations */
+.search-results {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--gray);
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+    /* Custom scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--light-gray);
+    /* Smooth appearance animation */
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+    animation: searchDropdownAppear 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes searchDropdownAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Webkit scrollbar styles */
+.search-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 3px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 3px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background: #007a8c;
+}
+
+.search-results-header {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--light-gray);
+    border-bottom: 1px solid var(--gray);
+    font-size: 0.85rem;
+    color: var(--dark-gray);
+    font-weight: normal;
+}
+
+.search-results-list {
+    padding: 0;
+}
+
+/* Search Section Headers */
+.search-section-header {
+    background: linear-gradient(135deg, var(--light-gray) 0%, #e8e9ea 100%);
+    border-bottom: 2px solid var(--gray);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+.search-section-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.search-section-icon {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.search-section-title {
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--black);
+}
+
+.search-section-count {
+    background: var(--blue);
+    color: var(--white);
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.search-result-item {
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--light-gray);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    position: relative;
+    border-left: 3px solid transparent;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: linear-gradient(135deg, #f0f9fb 0%, #f8fcfd 100%);
+    transform: translateX(2px);
+    border-left-color: var(--blue);
+    box-shadow: 0 2px 12px rgba(0, 147, 172, 0.08);
+}
+
+.search-result-item.selected {
+    background: linear-gradient(135deg, #e6f3f8 0%, #f0f9fb 100%);
+    transform: translateX(4px);
+    border-left-color: var(--blue);
+    box-shadow: 0 4px 16px rgba(0, 147, 172, 0.12);
+}
+
+.search-result-item:active {
+    transform: translateX(1px) translateY(1px);
+    transition: all 0.1s ease;
+}
+
+.search-result-content {
+    flex: 1;
+}
+
+.search-result-title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--black);
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
+
+.search-result-description {
+    font-size: 0.85rem;
+    color: var(--dark-gray);
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.search-result-type {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.search-result-type.curriculum {
+    background-color: var(--purple);
+}
+
+.search-result-type.skill {
+    background-color: var(--green);
+}
+
+.search-result-type.page {
+    background-color: var(--blue);
+}
+
+/* Search highlight for matching terms */
+.search-highlight {
+    background-color: #fff3cd;
+    padding: 1px 2px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+/* No results message */
+.search-no-results {
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--dark-gray);
+    font-style: italic;
+}
+
+/* Mobile responsive adjustments for search */
+@media (max-width: 768px) {
+    .search-wrapper {
+        flex: 1;
+        margin: 0 var(--spacing-sm);
+        min-width: 0;
+    }
+    
+    .search-input {
+        font-size: 0.85rem;
+        padding: var(--spacing-xs);
+    }
+    
+    .search-input::placeholder {
+        font-size: 0.8rem;
+    }
+    
+    .search-results {
+        left: var(--spacing-sm);
+        right: var(--spacing-sm);
+        margin-left: calc(-1 * var(--spacing-sm));
+        margin-right: calc(-1 * var(--spacing-sm));
+    }
+    
+    .search-result-item {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .search-result-title {
+        font-size: 0.9rem;
+    }
+    
+    .search-result-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-header {
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+    }
+    
+    .search-wrapper {
+        order: 3;
+        flex: 1 1 100%;
+        margin: var(--spacing-xs) 0 0 0;
+    }
+    
+    .site-title {
+        order: 2;
+        flex: 1;
+        font-size: 1.4rem;
+    }
+    
+    .back-btn {
+        order: 1;
+    }
+}
+
+/* Dynamic Skill Page Styles */
+.skill-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--gray);
+}
+
+.skill-header h2 {
+    color: var(--purple);
+    margin-bottom: var(--spacing-sm);
+}
+
+.skill-meta {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.skill-category {
+    background: var(--green);
+    color: var(--white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.skill-type-badge {
+    background: var(--blue);
+    color: var(--white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skill-description {
+    background: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--blue);
+}
+
+.skill-description p {
+    margin: 0;
+    font-style: italic;
+    color: var(--dark-gray);
+}
+
+.skill-content {
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.skill-content h3, .skill-content h4 {
+    color: var(--purple);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.skill-content ul, .skill-content ol {
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.skill-content li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.skill-resources {
+    background: linear-gradient(135deg, #f0f9fb 0%, #e6f3f8 100%);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    border: 1px solid var(--blue);
+}
+
+.skill-resources h3 {
+    color: var(--blue);
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.skill-navigation {
+    text-align: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--gray);
+}
+
+.back-to-search-btn {
+    background: var(--gray);
+    color: var(--black);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-to-search-btn:hover {
+    background: var(--dark-gray);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .skill-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .skill-page {
+        margin: 0;
     }
 }

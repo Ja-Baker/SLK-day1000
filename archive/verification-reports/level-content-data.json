@@ -1,0 +1,26 @@
+[
+  {
+    "level": "beginner",
+    "type": "goal_mismatch",
+    "markdown": "By the end of the reporting period, \\_\\_\\_\\_ will improve social awareness and engagement skills by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
+    "html": "By the end of the reporting period, ____ will improve social awareness and engagement skills by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
+    "severity": "medium",
+    "recommendation": "Update HTML goal to match markdown exactly"
+  },
+  {
+    "level": "intermediate",
+    "type": "goal_mismatch",
+    "markdown": "By the end of the reporting period, \\_\\_\\_\\_ will improve social understanding and responding skills by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
+    "html": "By the end of the reporting period, ____ will improve social understanding and responding skills by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
+    "severity": "medium",
+    "recommendation": "Update HTML goal to match markdown exactly"
+  },
+  {
+    "level": "advanced",
+    "type": "goal_mismatch",
+    "markdown": "By the end of the reporting period, \\_\\_\\_\\_ will improve social participation and interaction by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
+    "html": "By the end of the reporting period, ____ will improve social participation and interaction by achieving at least a 4 out of 5 on the following rubric as evaluated by the (speech-language pathologist/teacher/parent) over the previous two weeks.",
+    "severity": "medium",
+    "recommendation": "Update HTML goal to match markdown exactly"
+  }
+]
