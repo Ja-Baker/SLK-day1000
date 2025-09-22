@@ -10,7 +10,9 @@
       "Bash(wc:*)",
       "Bash(sed:*)",
       "Read(///**)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": []
