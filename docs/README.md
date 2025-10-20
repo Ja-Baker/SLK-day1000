@@ -27,11 +27,27 @@ A comprehensive web application for speech-language therapy curriculum planning.
 
 ```
 /
-├── index.html              # Main HTML file with all pages
-├── styles.css              # CSS styling with brand colors and responsive design
-├── script.js               # Main navigation and interaction JavaScript
-├── curriculum-content.js   # Curriculum data and content population
-└── README.md              # This file
+├── index.html                            # Main HTML file with all pages (293KB)
+├── package.json                          # Project configuration
+├── src/
+│   ├── js/
+│   │   ├── script.js                     # Main navigation and interaction (17KB)
+│   │   ├── search.js                     # Search functionality (16KB)
+│   │   ├── search-data.js                # Search index data (135KB)
+│   │   ├── skill-pages-complete.js       # Individual skill pages (60KB)
+│   │   └── external-links-mapping.js     # External resources (22KB)
+│   └── css/
+│       └── styles.css                    # CSS styling with brand colors (37KB)
+├── content/
+│   └── source-curriculum.md              # Source curriculum markdown (518KB)
+├── docs/
+│   ├── README.md                         # This file
+│   ├── CLAUDE.md                         # AI assistant guidance
+│   └── CHANGELOG.md                      # Change history
+└── archive/
+    ├── verification-reports/             # Content verification records
+    ├── verification-tools/               # Verification scripts
+    └── extracted-content/                # Historical content extracts
 ```
 
 ## Usage
