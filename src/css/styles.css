@@ -473,6 +473,39 @@ p {
     color: var(--purple);
 }
 
+.resource-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resource-thumbnail:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.checklist-section {
+    background-color: #ffffff;
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    margin-bottom: var(--spacing-md);
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.checklist-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--blue);
+}
+
 .question-box {
     background: linear-gradient(135deg, #fff8e1 0%, #f3e5f5 100%);
     padding: var(--spacing-lg);

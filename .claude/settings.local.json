@@ -12,7 +12,9 @@
       "Read(///**)",
       "Bash(python3:*)",
       "Bash(mkdir:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Read(//c/Users/insti/OneDrive/Documents/BT-CLIENT/Carrie working/Image add task/**)",
+      "Bash(npm run dev)"
     ],
     "deny": [],
     "ask": []
