@@ -1312,6 +1312,34 @@ const skillPagesContent = {
         content: ``
     },
 
+    bodyLanguage: {
+        title: "Body Language",
+        category: "Social Awareness",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-non-verbal-communication-understanding-and-using",
+        content: `<p>Understanding and using body language in social interactions.</p>`
+    },
+
+    facialExpressions: {
+        title: "Facial Expressions",
+        category: "Social Awareness",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-non-verbal-communication-understanding-and-using",
+        content: `<p>Recognizing and interpreting facial expressions to understand emotions.</p>`
+    },
+
+    gestureInterpretation: {
+        title: "Gesture Interpretation",
+        category: "Social Awareness",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-non-verbal-communication-understanding-and-using",
+        content: `<p>Understanding and using gestures for effective communication.</p>`
+    },
+
+    proxemics: {
+        title: "Proxemics (Personal Space)",
+        category: "Social Awareness",
+        externalLink: "https://hub.speechandlanguagekids.com/posts/social-communication-skills-proximity-giving-others-personal-space",
+        content: `<p>Understanding appropriate physical distance in social interactions.</p>`
+    },
+
     topicMaintenanceRelevant: {
         title: "Topic Maintenance and Providing Relevant Information",
         category: "Conversational Skills",
@@ -1586,6 +1614,7 @@ function showSkillPage(skillId) {
     const skill = skillPagesContent[skillId];
     if (!skill) {
         console.error(`Skill ${skillId} not found`);
+        alert(`This skill page is still under construction.\n\nSkill ID: "${skillId}"\n\nPlease try another activity or check back later.`);
         if (typeof window.hideLoading === 'function') {
             window.hideLoading();
         }

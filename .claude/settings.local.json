@@ -14,7 +14,8 @@
       "Bash(mkdir:*)",
       "Bash(mv:*)",
       "Read(//c/Users/insti/OneDrive/Documents/BT-CLIENT/Carrie working/Image add task/**)",
-      "Bash(npm run dev)"
+      "Bash(npm run dev)",
+      "Bash(npm install)"
     ],
     "deny": [],
     "ask": []
