@@ -141,6 +141,17 @@ p {
     line-height: 1.5;
 }
 
+a {
+    color: var(--pink);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #d64487;
+    text-decoration: underline;
+}
+
 /* Buttons */
 .primary-btn, .secondary-btn, .choice-btn, .area-btn, .curriculum-btn {
     font-family: 'Candara', 'Calibri', 'Arial', sans-serif;
